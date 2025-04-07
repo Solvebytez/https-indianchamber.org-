@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+</head>
+
+<body>
+    <!--Header-Section start-->
+    <header class="top-header top-header--skin-4">
+        <div class="header-main hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row row--flex row--vertical-center">
+                    <div class="col-lg-4">
+                        <div class="site-logo header-logo text-left">
+                            <a href="index.html">
+                                <!-- logo open -->
+                                <img src="assets/img/logo/1702708184logo.png" alt="logo" width="290">
+                                <!-- logo close -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+
+
+                        <div class="site-header__social text-center">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+
+
+                        <div class="site-header__social text-right">
+                            <!-- <a href="" target="__blank"><img class=" lazyloaded" src="assets/img/side-head-image.png " alt="ceris-header-img"></a> -->
+                            <ul class=" social-list--inverse social-list list-horizontal text-right text-white">
+                                <li><button id="up" style="background: none;border: none; color: #fff;">A+ </button> /
+                                    <button id="down" style="background: none;border: none; color: #fff;">A-</button>
+                                </li>
+
+                                <!--<button id="up"></button>-->
+
+                                <!-- <button id="down">-</button>-->
+
+                                <!-- <li><a href="#" target="_blank"><i class="mdicon mdicon-instagram"></i></a></li> -->
+                            </ul>
+                            <ul class=" social-list--inverse social-list list-horizontal text-right">
+                                <!-- <img src="assets/img/threads.svg" /> -->
+                                <li><a href="https://www.facebook.com/IndianChamber" target="_blank"><i
+                                            class="faa fa-brands fa-facebook-f" style="color: #3579ed;"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/IndianChamberofCommerce" target="_blank"><i
+                                            class="faa fa-brands fa-youtube" style="color: #b30000;"></i></a></li>
+                                <li>
+                                    <a href="https://www.threads.net/@indianchamber" target="_blank"> <img
+                                            class="black-theme faa" src="assets/img/threads.svg">
+                                    </a>
+                                </li>
+                                <li><a href="https://www.linkedin.com/company/indian-chamber-of-commerce-kolkata"
+                                        target="_blank"><i class="faa fa-brands fa-linkedin-in"
+                                            style="color: #3579ed;"></i></a></li>
+                                <li><a href="https://www.instagram.com/indianchamber/" target="_blank"><i
+                                            class="faa fa-brands fa-instagram" style="color: #d41111;"></i></a></li>
+
+                                <li>
+                                    <a href="https://twitter.com/ICC_Chamber" target="_blank"> <img
+                                            class="black-theme faa" src="assets/img/x-twitter.svg"></a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigation-bar hidden-xs hidden-sm js-sticky-header-holder  navigation-bar--inverse">
+            <div class="container">
+                <div class="wrapper">
+
+                    <label for="menu-btns" class="btns menu-btns"><i class="fas fa-bars"></i></label>
+                    <input type="radio" name="slider" id="menu-btn">
+                    <input type="radio" name="slider" id="close-btn">
+                    <ul class="nav-links">
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                        <li><a href="#">Home</a></li>
+
+                        <li>
+                            <a href="#" class="desktop-item">The Chamber <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">ICC Office Bearers</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">Services <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="desktop-item">Mega Menu <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showMega">
+                            <label for="showMega" class="mobile-item">Mega Menu</label>
+                            <div class="mega-box">
+                                <div class="content">
+
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Email Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Personal Email</a></li>
+                                            <li><a href="#">Business Email</a></li>
+                                            <li><a href="#">Mobile Email</a></li>
+                                            <li><a href="#">Web Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Security services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Site Seal</a></li>
+                                            <li><a href="#">VPS Hosting</a></li>
+                                            <li><a href="#">Privacy Seal</a></li>
+                                            <li><a href="#">Website design</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">International <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">Publication <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">ICC Chapters <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">MemberShip <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">More <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <div class="navigation-bar__section lwa lwa-template-modal flexbox-wrap flexbox-center-y ">
+                            <a href="#login-modal" class="navigation-bar__login-btn navigation-bar-btn"
+                                data-toggle="modal" data-target="#login-modal"><i class="bi bi-person"></i></a>
+                            <button type="submit" class="navigation-bar-btn js-search-popup"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </ul>
+                    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--Header-section End-->
+    <section class="banner-section position-relative text-white text-center">
+        <!-- Background Image -->
+        <div class="bg-image"></div>
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative z-1">
+            <a href="#explore" class="btn btn-blue-800 mt-3">The Chamber</a>
+            <h1 class="lh-lg fs-3 display-4 fw-bold">ICC-OFFICE-BEARERS</h1>
+
+        </div>
+    </section>
+    <!--Committee-Section-Start-->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+
+                <!-- Left Column: Main Content -->
+                <div class="col-lg-8 mb-4">
+
+
+                    <div class="mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="cards d-flex flex-row">
+                                <!-- Left: Image -->
+                                <img src="./assets/img/member/1699019007image.png" class="card-img-left" alt="Card 1"
+                                    style="width: 100px; height: 100px; object-fit: cover; ">
+
+                                <!-- Right: Content -->
+                                <div class="cards-body d-flex flex-column justify-content-center" style="width: 60%;">
+                                    <h5 class="card-titles">Mr.Abhyuday Jindal</h5>
+                                    <p>President- ICC & Managing Director
+                                        Jindal Stainless Limited</p>
+                                    <p class="card-text"><span class="btn">Profile</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="cards d-flex flex-row">
+                                <!-- Left: Image -->
+                                <img src="./assets/img/member/1699019094image.jpg" class="card-img-left" alt="Card 1"
+                                    style="width: 100px; height: 100px; object-fit: cover; ">
+
+                                <!-- Right: Content -->
+                                <div class="cards-body d-flex flex-column justify-content-center" style="width: 60%;">
+                                    <h5 class="card-titles">Mr.Brij Bhushan Agarwal</h5>
+                                    <p>Sr. Vice President- ICC & Managing Director
+                                        Shyam Metalics and Energy Ltd.d</p>
+                                    <p class="card-text"><span class="btn">Profile</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="cards d-flex flex-row">
+                                <!-- Left: Image -->
+                                <img src="./assets/img/member/1699019739image.jpeg" class="card-img-left" alt="Card 1"
+                                    style="width: 100px; height: 100px; object-fit: cover; ">
+
+                                <!-- Right: Content -->
+                                <div class="cards-body d-flex flex-column justify-content-center" style="width: 60%;">
+                                    <h5 class="card-titles">Mr. Parthiv Neotia</h5>
+                                    <p>Vice President-ICC & Executive Director
+                                        Ambuja Neotia Group</p>
+                                    <p class="card-text"> <span class="btn">Profile</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="cards d-flex flex-row">
+                                <!-- Left: Image -->
+                                <img src="./assets/img/member/1699019900image.png" class="card-img-left" alt="Card 1"
+                                    style="width: 100px; height: 100px; object-fit: cover; ">
+
+                                <!-- Right: Content -->
+                                <div class="cards-body d-flex flex-column justify-content-center" style="width: 60%;">
+                                    <h5 class="card-titles">Dr. Rajeev Singh</h5>
+                                    <p>Director General
+                                        Indian Chamber of Commerce</p>
+                                    <p class="card-text"><span class="btn">Profile</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="col-lg-4">
+                    <h4 class="post-heading">Services Offered By ICC</h4>
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-primary" style="font-size: 30px;">
+                                            <i class="fas fa-landmark"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">ICC Council of Arbitration</a></h5>
+                                    </div>
+                                </li>
+                    
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-success" style="font-size: 30px;">
+                                            <i class="fab fa-jedi-order"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Certificate of Origin</a></h5>
+                                    </div>
+                                </li>
+                    
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-warning" style="font-size: 30px;">
+                                            <i class="fas fa-file-invoice-dollar"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Investment Matchmaking</a></h5>
+                                    </div>
+                                </li>
+                    
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-info" style="font-size: 30px;">
+                                            <i class="fas fa-business-time"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Business Information Services</a></h5>
+                                    </div>
+                                </li>
+                    
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-secondary" style="font-size: 30px;">
+                                            <i class="fas fa-building"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Venue Booking</a></h5>
+                                    </div>
+                                </li>
+                    
+                                <li class="mb-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 text-danger" style="font-size: 30px;">
+                                            <i class="fab fa-cc-visa"></i>
+                                        </div>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Visa Recommendation</a></h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="list___heading">Are you looking for</h4>
+                    <div class="card  border-0">
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/latest.png" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    Latest Happenings
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/SER_4.jpg" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    Business Insights
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/inter.png" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    International Events
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/global_trade.png" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    Global Trade Solutions
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/north.png" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    Destination North East
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
+                                            <img src="./assets/img/invest_india.png" alt="MoU" class="w-100 h-100 object-fit-cover">
+                                            
+                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                                <h3 class="box__title mb-0 text-white">
+                                                    Invest in India
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>                  
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Committee-Section-End-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="custom-footer bg-light text-dark py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- 1. Head Office -->
+                <div class="col-12 col-md-3">
+                    <h5 class="footer-text fw-bold">HEAD OFFICE</h5>
+                    <p class="small">
+                        Indian Chamber of <color>Commerce,</color><br>
+                        India Exchange Place,<br>
+                        Kolkata-700001<br>
+                        Phone: <a href="tel:+91-33-22303242-44" class="footer-contect">+91-33-22303242-44</a><br>
+                        Fax: +91-33-22313377 / 3380<br>
+                        Email: <a href="mailto:ceo@indianchamber.net" class="footer-contect">ceo@indianchamber.net</a>
+                    </p>
+                </div>
+
+                <!-- 2. Map -->
+                <div class="col-12 col-md-3">
+                    <h6 class="fw-bold text-uppercase">Find Us</h6>
+                    <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps?q=Indian+Chamber+of+Commerce,+India+Exchange+Place,+Kolkata-700001&output=embed"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- 3. Quick Links -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">Career</a></li>
+                        <li><a href="#" class="text-dark">Facilities</a></li>
+                        <li><a href="#" class="text-dark">Useful Links</a></li>
+                        <li><a href="#" class="text-dark">Membership</a></li>
+                        <li><a href="#" class="text-dark">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4. Explore -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Explore</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">The Chamber</a></li>
+                        <li><a href="#" class="text-dark">Services</a></li>
+                        <li><a href="#" class="text-dark">Sectors</a></li>
+                        <li><a href="#" class="text-dark">ICC Chapters</a></li>
+                        <li><a href="#" class="text-dark">International</a></li>
+                    </ul>
+                </div>
+
+                <!-- 5. Resources -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Resources</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">Circular by DG</a></li>
+                        <li><a href="#" class="text-dark">Member’s Helpline</a></li>
+                        <li><a href="#" class="text-dark">Allied Organisation</a></li>
+                        <li><a href="#" class="text-dark">B2B</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Bottom Footer -->
+            <div class="row justify-content-between align-items-center text-center text-md-start">
+                <div class="col-md-6">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item"><a href="#" class="text-dark">Terms
+                                &amp; Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark">Sitemap</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <span class="text-muted small">BY Paulami Niyogi Consulting</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
