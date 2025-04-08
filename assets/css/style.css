@@ -1649,15 +1649,22 @@ ul.list-unstyled li p {
 .icc-contact-box h3 {
     color: #2f2483;
     font: normal 22px "Oswald", sans-serif;
-    /* font-size: 22px; */
+    font-size: 22px !important;
 }
 .icc-contact-box h3 strong{
     font-size: 22px;
 }
 .icc-contact-box h3 a {
-    color: #2f2483;
+    color: #2f2483 !important;
     font-family: math;
 }
+.text-truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 #icc-contact {
     background-color: #cbdefc !important;
 }
