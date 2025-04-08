@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+</head>
+
+<body>
+    <div class="scroll-count-percent">
+        <svg class="progress-scroll" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="progress__meter" cx="60" cy="60" r="54" stroke-width="3"></circle>
+            <circle class="progress__value" cx="60" cy="60" r="54" stroke-width="6"
+                style="stroke-dasharray: 339.292px; stroke-dashoffset: 339.292px;"></circle>
+        </svg>
+        <div class="percent-number"><span class="percent-number-text">0</span> %</div>
+    </div>
+    <!-- Go to Top Button -->
+    <a href="#" id="btnScrollTop" class="btn btn-primary scroll-to-top d-none">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!--Header-Section start-->
+    <header class="top-header top-header--skin-4">
+        <div class="header-main hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row row--flex row--vertical-center">
+                    <div class="col-lg-4">
+                        <div class="top-logo header-logo text-left">
+                            <a href="index.html">
+                                <!-- logo open -->
+                                <img src="assets/img/logo/1702708184logo.png" alt="logo" width="290">
+                                <!-- logo close -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+
+
+                        <div class="top-header__social text-center">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+
+
+                        <div class="top-header__social text-right">
+                            <!-- <a href="" target="__blank"><img class=" lazyloaded" src="assets/img/side-head-image.png " alt="ceris-header-img"></a> -->
+                            <ul class=" social-list--inverse social-list list-horizontal text-right text-white">
+                                <li><button id="up" style="background: none;border: none; color: #fff;">A+ </button> /
+                                    <button id="down" style="background: none;border: none; color: #fff;">A-</button>
+                                </li>
+
+                                <!--<button id="up"></button>-->
+
+                                <!-- <button id="down">-</button>-->
+
+                                <!-- <li><a href="#" target="_blank"><i class="mdicon mdicon-instagram"></i></a></li> -->
+                            </ul>
+                            <ul class=" social-list--inverse social-list list-horizontal text-right">
+                                <!-- <img src="assets/img/threads.svg" /> -->
+                                <li><a href="https://www.facebook.com/IndianChamber" target="_blank"><i
+                                            class="faa fa-brands fa-facebook-f" style="color: #3579ed;"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/IndianChamberofCommerce" target="_blank"><i
+                                            class="faa fa-brands fa-youtube" style="color: #b30000;"></i></a></li>
+                                <li>
+                                    <a href="https://www.threads.net/@indianchamber" target="_blank"> <img
+                                            class="black-theme faa" src="assets/img/threads.svg">
+                                    </a>
+                                </li>
+                                <li><a href="https://www.linkedin.com/company/indian-chamber-of-commerce-kolkata"
+                                        target="_blank"><i class="faa fa-brands fa-linkedin-in"
+                                            style="color: #3579ed;"></i></a></li>
+                                <li><a href="https://www.instagram.com/indianchamber/" target="_blank"><i
+                                            class="faa fa-brands fa-instagram" style="color: #d41111;"></i></a></li>
+
+                                <li>
+                                    <a href="https://twitter.com/ICC_Chamber" target="_blank"> <img
+                                            class="black-theme faa" src="assets/img/x-twitter.svg"></a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <nav class="sticky-top navigation-bar hidden-xs hidden-sm navigation-bar--inverse">
+            <div class="container">
+                <div class="wrapper">
+
+                    <label for="menu-btns" class="btns menu-btns"><i class="fas fa-bars"></i></label>
+                    <input type="radio" name="slider" id="menu-btn">
+                    <input type="radio" name="slider" id="close-btn">
+                    <ul class="nav-links">
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                        <li><a href="#">Home</a></li>
+
+                        <li>
+                            <a href="#" class="desktop-item">The Chamber <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="IccOfficeBearers.html">ICC Office Bearers</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">Services <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="services.html">
+                                        Investment-Matchmaking </a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="desktop-item">Sectors <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showMega">
+                            <label for="showMega" class="mobile-item">Mega Menu</label>
+                            <div class="mega-box">
+                                <div class="content">
+
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">agro-food-&-processing</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Design Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">Vectors</a></li>
+                                            <li><a href="#">Business cards</a></li>
+                                            <li><a href="#">Custom logo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Email Services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Personal Email</a></li>
+                                            <li><a href="#">Business Email</a></li>
+                                            <li><a href="#">Mobile Email</a></li>
+                                            <li><a href="#">Web Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Security services</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">top Seal</a></li>
+                                            <li><a href="#">VPS Hosting</a></li>
+                                            <li><a href="#">Privacy Seal</a></li>
+                                            <li><a href="#">Webtop design</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">International <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="switzerland.html">International Offices</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">Publication <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="Startup-Newsletter.html">Startup-Newsletter</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">ICC Chapters <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="North-Bengal.html">North-Bengal</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">MemberShip <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="Eligibility.html">Eligibility</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-item">More <i class="fa-solid fa-angle-down"
+                                    style="color: #ffffff;"></i></a>
+                            <input type="checkbox" id="showDrop">
+                            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                            <ul class="drop-menu">
+                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="#">Drop menu 2</a></li>
+                                <li><a href="#">Drop menu 3</a></li>
+                                <li><a href="#">Drop menu 4</a></li>
+                            </ul>
+                        </li>
+                        <div class="navigation-bar__section lwa lwa-template-modal flexbox-wrap flexbox-center-y ">
+                            <a href="#login-modal" class="navigation-bar__login-btn navigation-bar-btn"
+                                data-toggle="modal" data-target="#login-modal"><i class="bi bi-person"></i></a>
+                            <button type="submit" class="navigation-bar-btn js-search-popup"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                    </ul>
+                    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--Header-section End-->
+    <!--Our main-banner-Start-->
+    <div class="icc-banner-section">
+        <!-- Owl Carousel Container -->
+        <div id="iccCarousel" class="owl-carousel owl-theme">
+            <div class="icc-carousel-item">
+                <div class="container">
+                    <div class="icc-banner-content">
+                        <!-- Optional Content inside banner -->
+                    </div>
+                </div>
+                <img src="./assets/img/banner/indian-industries.jpg" alt="Desktop Banner"
+                    class="img-fluid d-none d-md-block">
+                <img src="./assets/img/banner/mobile-banner.jpg" alt="Mobile Banner"
+                    class="img-fluid d-block d-md-none">
+            </div>
+            <div class="icc-carousel-item">
+                <div class="container">
+                    <div class="icc-banner-content">
+                        <!-- Optional Content inside banner -->
+                    </div>
+                </div>
+                <img src="./assets/img/banner/indian-industries.jpg" alt="Desktop Banner"
+                    class="img-fluid d-none d-md-block">
+                <img src="./assets/img/banner/mobile-banner.jpg" alt="Mobile Banner"
+                    class="img-fluid d-block d-md-none">
+            </div>
+
+            <div class="icc-carousel-item">
+                <div class="container">
+                    <div class="icc-banner-content">
+                        <!-- Add more content if needed -->
+                    </div>
+                </div>
+                <img src="./assets/img/banner/indian-industries.jpg" alt="Desktop Banner"
+                    class="img-fluid d-none d-md-block">
+                <img src="./assets/img/banner/mobile-banner.jpg" alt="Mobile Banner"
+                    class="img-fluid d-block d-md-none">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Our main-banner-End-->
+    <section class="icc-intro-section py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold intro-heading">Welcome to Indian Chamber of Commerce in Switzerland</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="feature-box">
+                        <h4 class="fw-bold feature-heading pb-5">Bridging Business, Trade and Investment Between India
+                            and Switzerland</h4>
+                        <p class="fs-6">
+                            The Indian Chamber of Commerce in Switzerland (ICC Switzerland) is a premier platform
+                            dedicated to
+                            strengthening economic and business ties between India and Switzerland. Our mission is to
+                            empower businesses,
+                            facilitate bilateral trade, and promote investment opportunities by leveraging a robust
+                            network of
+                            professionals, industry leaders, and policymakers.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="./assets/img/indo-swiss-business-meeting.jpg" alt="Indo-Swiss Business Meeting"
+                        class="img-fluid super-rounded shadow-sm">
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 pt-5">
+                    <img src="./assets/img/sectors-of-indian-chamber-of-commerce.jpg" alt="Indo-Swiss Business Meeting"
+                        class="img-fluid super-rounded shadow-sm">
+
+                </div>
+                <div class="col-lg-6 col-md-12 pt-4">
+                    <div class="feature-box">
+                        <h4 class="fw-bold feature-heading pb-5">Why Partner with ICC Switzerland?</h4>
+                        <p class="fs-6">
+                            Tailored Business Support: We offer customised services to help Indian and Swiss businesses
+                            navigate market entry, expansion strategies, and business development opportunities.
+                            Strategic Networking: Join an exclusive community of like-minded professionals and connect
+                            with key stakeholders from various industries at our high-impact networking events. Market
+                            Intelligence & Insights: Gain access to valuable resources, industry research, and expert
+                            insights on the Swiss and Indian business landscapes.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Services Section -->
+    <section id="icc-services" class="pt-0 pb-4">
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="icc-service-box bg-white p-4">
+                        <div class="icc-section-title pb-4">
+                            <h3 class="text-center fw-bold">Our Services</h3>
+                        </div>
+                        <div class="icc-service-list">
+                            <ul class="list-unstyled px-md-5">
+                                <li class="mb-3">
+                                    <p>
+                                        <strong>Strategic Business Support:</strong>
+                                        Comprehensive advisory services designed for Indian and Swiss companies looking
+                                        to enter new markets, expand operations, or enhance business development
+                                        strategies. Our expertise extends to legal compliance, taxation, and regulatory
+                                        frameworks, ensuring seamless and compliant business operations.
+                                    </p>
+                                </li>
+                                <li class="mb-3">
+                                    <p>
+                                        <strong>High-Value Networking:</strong>
+                                        Gain exclusive access to a distinguished network of industry leaders, investors,
+                                        and key decision-makers through our networking events in both India and
+                                        Switzerland, fostering strategic collaborations and growth opportunities.
+                                    </p>
+                                </li>
+                                <li class="mb-3">
+                                    <p>
+                                        <strong>Market Intelligence &amp; Insights:</strong>
+                                        Leverage in-depth research, industry trend analysis, and expert reports on
+                                        digital transformation, economic developments, and market dynamics, providing
+                                        actionable intelligence to navigate the Swiss and Indian business landscapes
+                                        effectively.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="icc-contact" class="pt-0 pb-4">
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="icc-contact-box p-5 px-md-5 text-center">
+                        <h3 class="mb-0">
+                            For further information, please contact our
+                            <strong>Chief Representative Nayan Srivastava</strong>,
+
+                            <em>Email:</em>
+                            <a href="mailto:icc.switzerland@indianchamber.net"
+                                class="text-decoration-none d-inline-block">icc.switzerland@indianchamber.net</a>
+
+                            or our
+                            <strong>Deputy Chief Representative, Chrys Kamber</strong>
+
+                            <em>Email:</em>
+                            <a href="mailto:icc.switzerland1@indianchamber.net"
+                                class="text-decoration-none d-inline-block">icc.switzerland1@indianchamber.net</a>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="icc-membership-highlight" class="bg-light">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            
+            <!-- Left Column -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="icc-membership-info pe-md-4">
+                <h3 class="fw-semibold">
+                  Become a member of ICC Switzerland to expand your business, access new opportunities, and be part of a thriving business ecosystem that bridges India and Switzerland.
+                </h3>
+              </div>
+            </div>
+      
+            <!-- Right Column -->
+            <div class="col-md-6 text-center">
+              <div class="icc-membership-cta">
+                <h3 class="fw-semibold fw-bold mb-5">Join ICC Switzerland</h3>
+                <a href="/switzerland/Registration-Form.html" class="btn-2 px-4 py-2 ">
+                  Fill-up the Membership Form
+                </a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      <section id="highlight" style="background-image: url(./assets/img/Indian-chamber-of-commerce-in-switzerland-connect.png); background-repeat: round;">
+        <div class="container py-5 " style="height: 320px;">
+            
+        </div>
+    </section>
+      
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="custom-footer bg-light text-dark py-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- 1. Head Office -->
+                <div class="col-12 col-md-3">
+                    <h5 class="footer-text fw-bold">HEAD OFFICE</h5>
+                    <p class="small">
+                        Indian Chamber of <color>Commerce,</color><br>
+                        India Exchange Place,<br>
+                        Kolkata-700001<br>
+                        Phone: <a href="tel:+91-33-22303242-44" class="footer-contect">+91-33-22303242-44</a><br>
+                        Fax: +91-33-22313377 / 3380<br>
+                        Email: <a href="mailto:ceo@indianchamber.net" class="footer-contect">ceo@indianchamber.net</a>
+                    </p>
+                </div>
+
+                <!-- 2. Map -->
+                <div class="col-12 col-md-3">
+                    <h6 class="fw-bold text-uppercase">Find Us</h6>
+                    <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps?q=Indian+Chamber+of+Commerce,+India+Exchange+Place,+Kolkata-700001&output=embed"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- 3. Quick Links -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">Career</a></li>
+                        <li><a href="#" class="text-dark">Facilities</a></li>
+                        <li><a href="#" class="text-dark">Useful Links</a></li>
+                        <li><a href="#" class="text-dark">Membership</a></li>
+                        <li><a href="#" class="text-dark">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4. Explore -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Explore</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">The Chamber</a></li>
+                        <li><a href="#" class="text-dark">Services</a></li>
+                        <li><a href="#" class="text-dark">Sectors</a></li>
+                        <li><a href="#" class="text-dark">ICC Chapters</a></li>
+                        <li><a href="#" class="text-dark">International</a></li>
+                    </ul>
+                </div>
+
+                <!-- 5. Resources -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold text-uppercase">Resources</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-dark">Circular by DG</a></li>
+                        <li><a href="#" class="text-dark">Member’s Helpline</a></li>
+                        <li><a href="#" class="text-dark">Allied Organisation</a></li>
+                        <li><a href="#" class="text-dark">B2B</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Bottom Footer -->
+            <div class="row justify-content-between align-items-center text-center text-md-start">
+                <div class="col-md-6">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item"><a href="#" class="text-dark">Terms &amp; Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark">topmap</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <span class="text-muted small">BY Paulami Niyogi Consulting</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
