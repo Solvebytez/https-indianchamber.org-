@@ -1511,6 +1511,7 @@ span.btn {
 span.btn:hover{
     background-color: #00235a !important;
     border: none !important;
+  color:#fff !important;
 }
 .object-fit-cover {
     object-fit: cover;
