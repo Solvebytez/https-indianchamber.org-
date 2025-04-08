@@ -16,13 +16,26 @@
 </head>
 
 <body>
+    <div class="scroll-count-percent">
+        <svg class="progress-scroll" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="progress__meter" cx="60" cy="60" r="54" stroke-width="3"></circle>
+            <circle class="progress__value" cx="60" cy="60" r="54" stroke-width="6"
+                style="stroke-dasharray: 339.292px; stroke-dashoffset: 339.292px;"></circle>
+        </svg>
+        <div class="percent-number"><span class="percent-number-text">0</span> %</div>
+    </div>
+    <!-- Go to Top Button -->
+    <a href="#" id="btnScrollTop" class="btn btn-primary scroll-to-top d-none">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
     <!--Header-Section start-->
     <header class="top-header top-header--skin-4">
         <div class="header-main hidden-xs hidden-sm">
             <div class="container">
                 <div class="row row--flex row--vertical-center">
                     <div class="col-lg-4">
-                        <div class="site-logo header-logo text-left">
+                        <div class="top-logo header-logo text-left">
                             <a href="index.html">
                                 <!-- logo open -->
                                 <img src="assets/img/logo/1702708184logo.png" alt="logo" width="290">
@@ -34,7 +47,7 @@
 
 
 
-                        <div class="site-header__social text-center">
+                        <div class="top-header__social text-center">
 
                         </div>
 
@@ -44,7 +57,7 @@
 
 
 
-                        <div class="site-header__social text-right">
+                        <div class="top-header__social text-right">
                             <!-- <a href="" target="__blank"><img class=" lazyloaded" src="assets/img/side-head-image.png " alt="ceris-header-img"></a> -->
                             <ul class=" social-list--inverse social-list list-horizontal text-right text-white">
                                 <li><button id="up" style="background: none;border: none; color: #fff;">A+ </button> /
@@ -89,7 +102,8 @@
             </div>
         </div>
 
-        <nav class="navigation-bar hidden-xs hidden-sm js-sticky-header-holder  navigation-bar--inverse">
+        
+        <nav class="sticky-top navigation-bar hidden-xs hidden-sm navigation-bar--inverse">
             <div class="container">
                 <div class="wrapper">
 
@@ -106,7 +120,7 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">ICC Office Bearers</a></li>
+                                <li><a href="IccOfficeBearers.html">ICC Office Bearers</a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -118,7 +132,8 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="services.html">
+                                        Investment-Matchmaking </a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -126,7 +141,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="desktop-item">Mega Menu <i class="fa-solid fa-angle-down"
+                            <a href="#" class="desktop-item">Sectors <i class="fa-solid fa-angle-down"
                                     style="color: #ffffff;"></i></a>
                             <input type="checkbox" id="showMega">
                             <label for="showMega" class="mobile-item">Mega Menu</label>
@@ -136,7 +151,7 @@
                                     <div class="row">
                                         <header>Design Services</header>
                                         <ul class="mega-links">
-                                            <li><a href="#">Graphics</a></li>
+                                            <li><a href="#">agro-food-&-processing</a></li>
                                             <li><a href="#">Vectors</a></li>
                                             <li><a href="#">Business cards</a></li>
                                             <li><a href="#">Custom logo</a></li>
@@ -172,10 +187,10 @@
                                     <div class="row">
                                         <header>Security services</header>
                                         <ul class="mega-links">
-                                            <li><a href="#">Site Seal</a></li>
+                                            <li><a href="#">top Seal</a></li>
                                             <li><a href="#">VPS Hosting</a></li>
                                             <li><a href="#">Privacy Seal</a></li>
-                                            <li><a href="#">Website design</a></li>
+                                            <li><a href="#">Webtop design</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -187,7 +202,7 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="switzerland.html">International Offices</a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -199,7 +214,7 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="Startup-Newsletter.html">Startup-Newsletter</a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -211,7 +226,7 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="North-Bengal.html">North-Bengal</a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -223,7 +238,7 @@
                             <input type="checkbox" id="showDrop">
                             <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                             <ul class="drop-menu">
-                                <li><a href="#">Drop menu 1</a></li>
+                                <li><a href="Eligibility.html">Eligibility</a></li>
                                 <li><a href="#">Drop menu 2</a></li>
                                 <li><a href="#">Drop menu 3</a></li>
                                 <li><a href="#">Drop menu 4</a></li>
@@ -364,52 +379,58 @@
                                         <div class="me-3 text-primary" style="font-size: 30px;">
                                             <i class="fas fa-landmark"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">ICC Council of Arbitration</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">ICC Council
+                                                of Arbitration</a></h5>
                                     </div>
                                 </li>
-                    
+
                                 <li class="mb-3">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 text-success" style="font-size: 30px;">
                                             <i class="fab fa-jedi-order"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Certificate of Origin</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Certificate
+                                                of Origin</a></h5>
                                     </div>
                                 </li>
-                    
+
                                 <li class="mb-3">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 text-warning" style="font-size: 30px;">
                                             <i class="fas fa-file-invoice-dollar"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Investment Matchmaking</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Investment
+                                                Matchmaking</a></h5>
                                     </div>
                                 </li>
-                    
+
                                 <li class="mb-3">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 text-info" style="font-size: 30px;">
                                             <i class="fas fa-business-time"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Business Information Services</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Business
+                                                Information Services</a></h5>
                                     </div>
                                 </li>
-                    
+
                                 <li class="mb-3">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 text-secondary" style="font-size: 30px;">
                                             <i class="fas fa-building"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Venue Booking</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Venue
+                                                Booking</a></h5>
                                     </div>
                                 </li>
-                    
+
                                 <li class="mb-0">
                                     <div class="d-flex align-items-center">
                                         <div class="me-3 text-danger" style="font-size: 30px;">
                                             <i class="fab fa-cc-visa"></i>
                                         </div>
-                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Visa Recommendation</a></h5>
+                                        <h5 class="mb-0"><a href="#" class="text-decoration-none text-dark">Visa
+                                                Recommendation</a></h5>
                                     </div>
                                 </li>
                             </ul>
@@ -421,10 +442,13 @@
                             <ul class="list-unstyled mt-3">
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/latest.png" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/latest.png" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     Latest Happenings
                                                 </h3>
@@ -434,10 +458,13 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/SER_4.jpg" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/SER_4.jpg" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     Business Insights
                                                 </h3>
@@ -447,10 +474,13 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/inter.png" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/inter.png" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     International Events
                                                 </h3>
@@ -460,10 +490,13 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/global_trade.png" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/global_trade.png" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     Global Trade Solutions
                                                 </h3>
@@ -473,10 +506,13 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/north.png" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/north.png" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     Destination North East
                                                 </h3>
@@ -486,21 +522,24 @@
                                 </li>
                                 <li class="mb-3">
                                     <a href="#" class="text-decoration-none">
-                                        <div class="position-relative overflow-hidden rounded box shadow-sm" style="height: 85px;">
-                                            <img src="./assets/img/invest_india.png" alt="MoU" class="w-100 h-100 object-fit-cover">
-                                            
-                                            <div class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
+                                        <div class="position-relative overflow-hidden rounded box shadow-sm"
+                                            style="height: 85px;">
+                                            <img src="./assets/img/invest_india.png" alt="MoU"
+                                                class="w-100 h-100 object-fit-cover">
+
+                                            <div
+                                                class="position-absolute top-0 text-center w-100 h-100 d-flex align-items-center justify-content-center overlay-gradient">
                                                 <h3 class="box__title mb-0 text-white">
                                                     Invest in India
                                                 </h3>
                                             </div>
                                         </div>
                                     </a>
-                                </li>                  
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
