@@ -686,6 +686,9 @@ nav input{
     /*padding: 60px 0;*/
     overflow-x: hidden;
 }
+.d-flex.flex-column.flex-md-row.align-items-center.p-3.border.rounded.shadow-sm.h-100 {
+    color: #000;
+}
 .block-heading.block-heading--style-6 .block-heading__title:before {
     content: '';
     border-top: 3px solid #666;
@@ -1503,6 +1506,11 @@ span.btn {
     color: #fff;
     padding: 4px 15px;
     border-radius: 5px;
+  border:none !important
+}
+span.btn:hover{
+    background-color: #00235a !important;
+    border: none !important;
 }
 .object-fit-cover {
     object-fit: cover;
