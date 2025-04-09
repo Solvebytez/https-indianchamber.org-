@@ -406,6 +406,13 @@ nav .wrapper {
     padding-right: 0;
     margin-left: 111px;
 }
+@media (max-width: 1400px) and (min-width: 993px) {
+  .navigation-bar__section:last-child {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 .flexbox-wrap {
     display: -webkit-box;
