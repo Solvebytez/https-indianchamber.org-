@@ -1375,6 +1375,9 @@ h3.Latest__title.text-decoration-none.typescale-2 {
 .card-body.d-flex {
     color: #000;
 }
+.card-body.d-flex h5{
+  font-size:1.1rem;
+}
 .card.d-flex {
     margin-top: 25px;
 }
