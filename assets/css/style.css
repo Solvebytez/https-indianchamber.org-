@@ -1348,9 +1348,14 @@ a.text-decoration-none.Latest__cat.Latest__cat-has-line{
     left: 0px;    
     transform: translate3d(-246px, 0px, 0px);
     height: 276px !important;
+   width: 82%;
     cursor: pointer !important;
     transition: 200ms ;
 }
+  #left-slider .owl-item {
+    width: 301px !important;
+}
+ 
 .Latest__text{  
     height: 276px !important;
     cursor: pointer !important;
