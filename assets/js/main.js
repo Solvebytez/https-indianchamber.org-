@@ -33,38 +33,28 @@ $(document).ready(function () {
 });
 
 // Left & Right Sliders
-// Left & Right Sliders
 $(document).ready(function () {
     $("#left-slider").owlCarousel({
-        items: 1,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000, // increased for better UX
-        smartSpeed: 1000,      // use smartSpeed instead of slideSpeed
-        dots: false,
-        nav: false,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 1 },
-            1000: { items: 1 }
-        }
-    });
-
-    $("#right-slider").owlCarousel({
         items: 1,
-        loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
         smartSpeed: 1000,
         dots: false,
-        nav: false,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 1 },
-            1000: { items: 1 }
-        }
+        nav: false
+    });
+
+    $("#right-slider").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        dots: false,
+        nav: false
     });
 });
+
 
 
   $('.carousel-testimonia').owlCarousel({
