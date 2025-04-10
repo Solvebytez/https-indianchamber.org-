@@ -8,15 +8,7 @@
 body {
     overflow-x: hidden; 
   }
-#left-slider .owl-item,
-#right-slider .owl-item {
-  width: 100% !important;
-}
 
-#left-slider .item,
-#right-slider .item {
-  width: 100%;
-}
 .scroll-count-percent {
     position: fixed;
     /* bottom: 58px; */
