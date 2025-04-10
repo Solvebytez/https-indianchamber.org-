@@ -43,7 +43,8 @@ $(document).ready(function () {
         dots: false,
         nav: false
     });
-
+});
+$(document).ready(function () {
     $("#right-slider").owlCarousel({
         loop: true,
         items: 1,
