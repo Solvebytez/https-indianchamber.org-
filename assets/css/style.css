@@ -117,6 +117,13 @@ header.top-header.top-header--skin-4 {
         /* width: 1300px; */
     }
 }
+@media (min-width: 970px) {
+   i.fa-solid.fa-angle-down {
+        display:none;
+        /* width: 1300px; */
+    }
+}
+
 .row--flex.row--vertical-center {
     -webkit-box-align: center;
     box-align: center;
