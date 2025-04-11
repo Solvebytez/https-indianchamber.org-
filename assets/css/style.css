@@ -262,7 +262,14 @@ img {
 
 /* Ensure navigation bar is sticky too */
 
-
+div#mobail-logo\>\a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \<a\ href\= {
+    display: none;
+}
+@media screen and (max-width: 970px) {
+    div#mobail-logo\>\a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \<a\ href\= {
+        display: block;
+    }
+}
 nav .wrapper {
     position: relative;
     max-width: 1300px;
