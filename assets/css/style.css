@@ -267,8 +267,8 @@ nav .wrapper {
     position: relative;
     max-width: 1300px;
     padding: 0px 26px;
-   /* height: 45px;
-    line-height: 45px;*/
+    height: 45px;
+    line-height: 45px;
     margin: auto;
     /* display: flex
 ; */
