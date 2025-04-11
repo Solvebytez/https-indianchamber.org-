@@ -262,11 +262,11 @@ img {
 
 /* Ensure navigation bar is sticky too */
 
-div#mobail-logo\>\a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \<a\ href\= {
+#mobail-logo {
     display: none;
 }
 @media screen and (max-width: 970px) {
-    div#mobail-logo\>\a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \<a\ href\= {
+    #mobail-logo{
         display: block;
     }
 }
