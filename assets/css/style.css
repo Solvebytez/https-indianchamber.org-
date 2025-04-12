@@ -32,6 +32,9 @@ li.nav-item .nav-link:hover{
 
  
   /* Hover dropdown for desktop */
+ul.navbar-nav {
+    padding-left: 19px !important;
+}
 
   a.nav-link.dropdown-toggle {
     color: #ffffff !important;
