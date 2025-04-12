@@ -72,9 +72,9 @@ header.top-header.top-header--skin-4{
     background: #fff;
 }
 
-/*.navbar{
+.navbar{
     padding: 0 0 !important;
-}*/
+}
 
 }
  /* Hover dropdown for desktop */
@@ -87,7 +87,7 @@ header.top-header.top-header--skin-4{
 .container-fluid {
     max-width: 1198px;
     border-radius: 5px;
-    line-height: 3rem;
+    line-height: 1.8rem;
     background: #ff6000;
 }
 .container {
