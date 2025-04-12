@@ -511,12 +511,12 @@ nav .wrapper {
 }
 .navigation-bar__section:last-child {
     padding-right: 0;
-    margin-left: 111px;
+    margin-left: 14px;
 }
 @media (max-width: 1400px) and (min-width: 993px) {
   .navigation-bar__section:last-child {
     margin-left: 0;
-    padding-right: 14px;
+    padding-right: 0px;
   }
 }
 
