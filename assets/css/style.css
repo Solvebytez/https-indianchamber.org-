@@ -22,7 +22,9 @@ body {
  
   /* Hover dropdown for desktop */
 
-  
+  a.nav-link.dropdown-toggle {
+    color: #ffffff !important;
+}
 
 
   .offcanvas-header {
