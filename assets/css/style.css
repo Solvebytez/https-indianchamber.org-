@@ -11,7 +11,9 @@ body {
   }
 
 
-
+ul.navbar-nav .nav-item {
+    padding-left: 12px;
+}
   .navbar {
     position: sticky;
     top: 0;
