@@ -18,6 +18,10 @@ body {
     z-index: 1050;
     padding:0 !important;
   }
+li.nav-item .nav-link{
+  font-size:14px;
+  font-waight:700;
+}
 li.nav-item .nav-link:hover{
     border-bottom: 2px solid #00235a !important;
 }
