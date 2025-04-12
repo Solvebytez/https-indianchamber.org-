@@ -174,3 +174,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const allLinks = document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item');
+
+    allLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        // Remove 'active' from all nav links
+        allLinks.forEach(item => item.classList.remove('active'));
+
+        // Add 'active' to the clicked link
+        this.classList.add('active');
+
+        // Also add 'active' to parent nav-link if it's a dropdown-item
+        const parentDropdown = this.closest('.dropdown-menu');
+        if (parentDropdown) {
+          const parentLink = parentDropdown.previousElementSibling;
+          if (parentLink && parentLink.classList.contains('nav-link')) {
+            parentLink.classList.add('active');
+          }
+        }
+      });
+    });
+  });
