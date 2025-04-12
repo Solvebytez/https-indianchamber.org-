@@ -20,7 +20,7 @@ body {
   }
 li.nav-item .nav-link{
   font-size:14px;
-  font-waight:700;
+  font-weight: 600;
 }
 li.nav-item .nav-link:hover{
     border-bottom: 2px solid #00235a !important;
