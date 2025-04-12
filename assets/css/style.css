@@ -4,10 +4,97 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 body {
     overflow-x: hidden; 
   }
+
+
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+  }
+
+ 
+  /* Hover dropdown for desktop */
+
+  
+
+
+  .offcanvas-header {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .offcanvas-toggle-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .offcanvas-toggle-text:hover {
+    color: #e2e6ea;
+  }
+  .navbar .main-logo {
+    display: none;
+    width: 100%;
+    max-width: 43%;
+}
+.list-unstyled {
+    padding-left: 0px !important;
+    list-style: none;
+    padding-right: 46px !important;
+}
+/*ul.navbar-nav .nav-item .nav-link {
+    padding: 0 1rem;
+}*/
+/*ul.navbar-nav {
+    padding-left: 19px !important;
+}*/
+.dropdown-menu.dropdown-item{
+    border-bottom: 2px solid red;
+}
+  @media (max-width: 992px) {
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header-main{
+    display: none;
+}
+
+  .navbar .main-logo {
+  display: block;
+}
+header.top-header.top-header--skin-4{
+    background: #fff;
+}
+
+/*.navbar{
+    padding: 0 0 !important;
+}*/
+
+}
+ /* Hover dropdown for desktop */
+ @media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+.container-fluid {
+    max-width: 1198px;
+    border-radius: 5px;
+    line-height: 3rem;
+    background: #ff6000;
+}
+.container {
+    max-width: 1250px !important;
+}
+}
+
 
 .scroll-count-percent {
     position: fixed;
@@ -73,6 +160,11 @@ span.btn:hover{
 
 header.top-header.top-header--skin-4 {
     background: #00235a;
+}
+@media (max-width: 992px) {
+    header.top-header.top-header--skin-4 {
+        background: #fff;
+    }
 }
 .top-header {
     position: relative;
@@ -424,7 +516,7 @@ nav .wrapper {
 @media (max-width: 1400px) and (min-width: 993px) {
   .navigation-bar__section:last-child {
     margin-left: 0;
-    padding-right: 0;
+    padding-right: 14px;
   }
 }
 
