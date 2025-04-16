@@ -488,6 +488,9 @@ nav .wrapper {
     display: block;
     height: 100%;
 }
+#offcanvasNav {
+    background: #ff6000 !important;
+}
 .header-logo a {
     text-decoration: none !important;
 }
