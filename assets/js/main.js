@@ -212,4 +212,20 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function () {
+    var currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "") {
+        currentPage = "index.html"; // or your default/homepage
+    }
+
+    // Highlight correct dropdown item and its parent menu
+    $('.dropdown-menu .dropdown-item').each(function () {
+        var href = $(this).attr('href');
+        if (href === currentPage) {
+            $(this).addClass('active');
+            $(this).closest('.nav-item.dropdown').addClass('active');
+        }
+    });
+});
     
