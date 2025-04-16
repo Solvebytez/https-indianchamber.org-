@@ -175,77 +175,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
- document.addEventListener('DOMContentLoaded', function () {
+   document.addEventListener('DOMContentLoaded', function () {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html"; // Default to homepage
+
+    // Get all nav links (main and dropdown)
     const allLinks = document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item');
 
     allLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        // Remove 'active' from all nav links
-        allLinks.forEach(item => item.classList.remove('active'));
+      const linkHref = link.getAttribute('href');
 
-        // Add 'active' to the clicked link
-        this.classList.add('active');
+      // Match exact page
+      if (linkHref === currentPage) {
+        link.classList.add('active');
 
-        // Also add 'active' to parent nav-link if it's a dropdown-item
-        const parentDropdown = this.closest('.dropdown-menu');
-        if (parentDropdown) {
-          const parentLink = parentDropdown.previousElementSibling;
-          if (parentLink && parentLink.classList.contains('nav-link')) {
-            parentLink.classList.add('active');
+        // If it's a dropdown-item, activate its parent dropdown too
+        const parentDropdownMenu = link.closest('.dropdown-menu');
+        if (parentDropdownMenu) {
+          const parentNavLink = parentDropdownMenu.previousElementSibling;
+          if (parentNavLink && parentNavLink.classList.contains('nav-link')) {
+            parentNavLink.classList.add('active');
+          }
+
+          // Also mark parent nav-item (li)
+          const parentNavItem = parentDropdownMenu.closest('.nav-item');
+          if (parentNavItem) {
+            parentNavItem.classList.add('active');
+          }
+        } else {
+          // For top-level links like Home
+          const parentNavItem = link.closest('.nav-item');
+          if (parentNavItem) {
+            parentNavItem.classList.add('active');
           }
         }
-      });
+      }
     });
   });
-
-$(document).ready(function () {
-    var currentPage = window.location.pathname.split("/").pop();
-
-    if (currentPage === "") {
-        currentPage = "index.html"; // or your homepage file
-    }
-
-    $('#topheader .navbar-nav li a').each(function () {
-        var href = $(this).attr('href');
-        if (href === currentPage) {
-            $(this).parent('li').addClass('active');
-        }
-    });
-});
-$(document).ready(function () {
-    var currentPage = window.location.pathname.split("/").pop();
-
-    if (currentPage === "") {
-        currentPage = "index.html"; // or your default/homepage
-    }
-
-    // Highlight correct dropdown item and its parent menu
-    $('.dropdown-menu .dropdown-item').each(function () {
-        var href = $(this).attr('href');
-        if (href === currentPage) {
-            $(this).addClass('active');
-            $(this).closest('.nav-item.dropdown').addClass('active');
-        }
-    });
-});
-
-$(document).ready(function () {
-    var currentPage = window.location.pathname.split("/").pop();
-
-    // Treat empty path as homepage
-    if (currentPage === "") {
-        currentPage = "index.html"; // your homepage file
-    }
-
-    // Loop through all menu items
-    $('.navbar-nav a').each(function () {
-        var href = $(this).attr('href');
-        if (href === currentPage) {
-            $(this).addClass('active');
-
-            // Also add active to parent .nav-item if needed
-            $(this).closest('.nav-item').addClass('active');
-        }
-    });
-});
-    
