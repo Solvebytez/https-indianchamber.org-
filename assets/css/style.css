@@ -149,6 +149,12 @@ header.top-header.top-header--skin-4{
     text-decoration: none;
     background-color: #00235a !important; /* Your custom background */
 }
+    .navbar-nav .dropdown-menu .dropdown-item.active,
+.navbar-nav .dropdown-menu .dropdown-item:active {
+    background-color: #c60000 !important;  /* 🔴 Your red */
+    color: #fff !important;
+    text-decoration: none !important;
+}
 
 
 
