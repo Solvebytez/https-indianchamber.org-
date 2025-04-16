@@ -228,4 +228,24 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Treat empty path as homepage
+    if (currentPage === "") {
+        currentPage = "index.html"; // your homepage file
+    }
+
+    // Loop through all menu items
+    $('.navbar-nav a').each(function () {
+        var href = $(this).attr('href');
+        if (href === currentPage) {
+            $(this).addClass('active');
+
+            // Also add active to parent .nav-item if needed
+            $(this).closest('.nav-item').addClass('active');
+        }
+    });
+});
     
