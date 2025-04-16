@@ -42,9 +42,9 @@ li.nav-item .nav-link{
   font-size:14px;
   font-weight: 600;
 }
-li.nav-item a.nav-link.active{
+/*li.nav-item a.nav-link.active{
  border-bottom: 3px solid #00235a !important; 
-}
+}*/
 li.nav-item .nav-link:hover{
     border-bottom: 3px solid #00235a !important;
   
