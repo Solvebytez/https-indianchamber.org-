@@ -163,29 +163,19 @@ header.top-header.top-header--skin-4{
  @media (min-width: 992px) {
     .navbar .dropdown:hover .dropdown-menu {
       display: block;
-    }
-   .container-fluid{
-     border-radius:1px;
-     height:0px;
-   }
+    } 
   }
 
 .container-fluid {
     max-width: 1222px;
     border-radius: 5px;
-    /* line-height: 40px; */
-    height: 40px;
+    /* line-height: 40px; */   
     background: #ff6000;
 }
 .container {
     max-width: 1250px !important;
 }
- @media (min-width: 992px) { 
-   .container-fluid{
-     border-radius:1px;
-     height:0px;
-   }
-  }
+
 
 
 
