@@ -134,10 +134,8 @@ a.nav-link {
 header.top-header.top-header--skin-4{
     background: #fff;
 }
-    .dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #00235a !important;
+   a.dropdown-item.active {
+    background: #00235a !important;
 }
 
 
