@@ -139,6 +139,10 @@ header.top-header.top-header--skin-4{
      color:red !important;
      font-size:50px !important;
 }
+    a.dropdown-item.active {
+    background: red !important;
+}
+
     .dropdown-item.active, 
 .dropdown-item:active {
     color:red;
