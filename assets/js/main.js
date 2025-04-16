@@ -199,10 +199,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-        $(document).ready(function () {
-        $('.nav-links li a').on('click', function () {
-            $('.nav-links li').removeClass('active');
-            $(this).closest('li').addClass('active');
+      $(document).ready(function () {
+        var currentPath = window.location.pathname.split("/").pop();
+
+        // If path is empty (home page), set it to index.html or your homepage filename
+        if (currentPath === "") {
+            currentPath = "index.html";
+        }
+
+        $('.nav-links li').removeClass('active');
+
+        $('.nav-links li a').each(function () {
+            var href = $(this).attr('href');
+
+            if (href === currentPath) {
+                $(this).closest('li').addClass('active');
+            }
         });
     });
     
