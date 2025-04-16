@@ -30,12 +30,7 @@ ul.navbar-nav .nav-item {
     background-color: #333;
     color: #fff;
 }
- .active {
-  
-    border-bottom:2px solid #00f;
-    padding:8px;
-    
-  }
+
 
   .navbar {
     position: sticky;
