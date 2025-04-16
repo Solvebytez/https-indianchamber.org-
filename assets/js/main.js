@@ -197,3 +197,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+
+        $(document).ready(function () {
+            $('.nav-links li a').on('click', function () {
+                $('.nav-links li').removeClass('active');
+                $(this).closest('li').addClass('active');
+            });
+        });
+    
