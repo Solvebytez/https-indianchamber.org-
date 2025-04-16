@@ -336,6 +336,9 @@ img {
 .text-right {
     text-align: right;
 }
+img.img-fluid.br-rd {
+    height: 144px;
+}
 @media (min-width: 768px) {
     .social-list {
         font-size: 16px;
