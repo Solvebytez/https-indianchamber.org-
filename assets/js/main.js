@@ -198,23 +198,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+$(document).ready(function () {
+    var currentPage = window.location.pathname.split("/").pop();
 
-      $(document).ready(function () {
-        var currentPath = window.location.pathname.split("/").pop();
+    if (currentPage === "") {
+        currentPage = "index.html"; // or your homepage file
+    }
 
-        // If path is empty (home page), set it to index.html or your homepage filename
-        if (currentPath === "") {
-            currentPath = "index.html";
+    $('#topheader .navbar-nav li a').each(function () {
+        var href = $(this).attr('href');
+        if (href === currentPage) {
+            $(this).parent('li').addClass('active');
         }
-
-        $('.nav-links li').removeClass('active');
-
-        $('.nav-links li a').each(function () {
-            var href = $(this).attr('href');
-
-            if (href === currentPath) {
-                $(this).closest('li').addClass('active');
-            }
-        });
     });
+});
     
