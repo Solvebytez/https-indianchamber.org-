@@ -1636,24 +1636,27 @@ a{
     display: block;
   }
   
-  .overlay-content {
+  
+.overlay-content {
     position: absolute;
-    top: 0px;
+    top: 17px;
     left: 0;
-    height: 100%;
-    background: rgb(0 0 0 / 38%);
+    height: 97%;
+    background: rgb(0 0 0 / 62%);
     color: white;
     display: flex
 ;
     align-items: center;
+    height: 54px;
     justify-content: center;
     text-align: center;
-    padding: 15px;
+    margin-top: 96px;
+    padding: -56px;
     transition: 0.3s ease-in-out;
 }
 h3.network__title {
     line-height: 13px;
-    margin-top: 103px;
+    margin-top: -12px;
 }
   
 .overlay-content a {
