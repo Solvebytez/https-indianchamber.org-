@@ -910,6 +910,9 @@ nav input{
     padding-top: 5px;
     padding-left: 10px;
 }
+.block-heading {
+    padding: 15px 23px 0px 5px;
+}
 .block-heading.block-heading--style-6 .block-heading__title, .block-heading.block-heading--style-7 .block-heading__title, .block-heading.block-heading--style-8 .block-heading__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -962,8 +965,9 @@ nav input{
 
 /* Text styling */
 .post__text h3 {
-    font-size: 18px;   
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 3px;
+    text-align: left;
 }
 
 /* Responsive Styling */
