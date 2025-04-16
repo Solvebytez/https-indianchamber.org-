@@ -1115,7 +1115,7 @@ h3.exclusive__title.typescale-3.text-white a {
     /* border-image-repeat: round; */
     height: 173px;
     margin: 9px;
-    width: 307px;
+    width: 275px;
 }
 div#post-donkey-2 img {
     height: 140px;
@@ -1480,8 +1480,7 @@ h3.post__title.typescale-2.custom-typescale-2--xxs {
 .owl-carousel .item img {
     width: 100%;
     height: auto;
-    display: block;
-    border-radius: 8px;
+    display: block;  
 }
 
 .content {
