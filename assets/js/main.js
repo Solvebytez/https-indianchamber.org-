@@ -58,27 +58,34 @@ $(document).ready(function () {
 
 
 
-  $('.carousel-testimonia').owlCarousel({
-    loop:true,
-    margin:0,
-    items:4,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
+$('.carousel-testimonia').owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 4,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
         },
-        600:{
-            items:3,
-            nav:false
+        600: {
+            items: 3,
+            nav: false
         },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
+        1000: {
+            items: 3,
+            nav: true,
+            loop: false
         }
-    }
-})
+    },
+    onInitialized: setOwlWrapperLeft,
+    onTranslated: setOwlWrapperLeft
+});
+
+function setOwlWrapperLeft() {
+    // Set the left value of the owl-wrapper
+    $('.carousel-testimonia .owl-wrapper').css('left', '21px');
+}
 
 
 // Network Slider
