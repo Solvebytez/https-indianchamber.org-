@@ -10,7 +10,15 @@ body {
     overflow-x: hidden; 
   }
 
+.dropdown-item.active {
+    background-color: #333;
+    color: #fff;
+}
 
+.nav-item.active > .nav-link {
+    background-color: #333;
+    color: #fff;
+}
 ul.navbar-nav .nav-item {
     padding-left: 12px;
 }
