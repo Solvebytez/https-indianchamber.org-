@@ -146,9 +146,10 @@ header.top-header.top-header--skin-4{
   }
 
 .container-fluid {
-    max-width: 1198px;
+    max-width: 1222px;
     border-radius: 5px;
-    line-height: 1.8rem;
+    /* line-height: 40px; */
+    height: 40px;
     background: #ff6000;
 }
 .container {
