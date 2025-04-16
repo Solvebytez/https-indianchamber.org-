@@ -134,7 +134,7 @@ a.nav-link {
 header.top-header.top-header--skin-4{
     background: #fff;
 }
-   a.dropdown-item.active {
+   li a.dropdown-item.active {
     background: #00235a !important;
      color:red !important;
      font-size:50px !important;
