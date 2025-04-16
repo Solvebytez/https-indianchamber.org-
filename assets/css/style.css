@@ -38,10 +38,10 @@ li.nav-item .nav-link:hover{
 ul.navbar-nav {
     padding-left: 19px !important;
 }
-
-  a.nav-link.dropdown-toggle {
+a.nav-link {
     color: #ffffff !important;
 }
+ 
 
 
   .offcanvas-header {
