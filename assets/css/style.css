@@ -2034,8 +2034,14 @@ a.office-links {
     text-decoration: none;
     font-weight: 600;
 }
+a.office-links:hover{
+  color:#000 !important;
+}
 a.office-link {
     text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+}
+a.office-link:hover {   
     color: rgba(0, 0, 0, .6);
 }
  
