@@ -1590,6 +1590,7 @@ h3.Latest__title.text-decoration-none.typescale-2 {
 }
 .card {
     border: none !important; /* Removes border */
+  background-color:none !important:
 }
 #resources-box{
     background-color: #fff;
