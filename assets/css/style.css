@@ -1590,7 +1590,7 @@ h3.Latest__title.text-decoration-none.typescale-2 {
 }
 .card {
     border: none !important; /* Removes border */
-  background-color:none !important:
+  background-color: #fdfdfd00 !important;
 }
 #resources-box{
     background-color: #fff;
@@ -1764,7 +1764,7 @@ h4.list___heading {
     font-weight: 600;
     padding-top: 21px;
     line-height: 33px;
-    background: #fff;
+   
     padding-left: 21px;
 }
 .card.border-0 {
