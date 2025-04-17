@@ -1617,6 +1617,13 @@ h3.Latest__title.text-decoration-none.typescale-2 {
 .card.d-flex {
     margin-top: 25px;
 }
+.bg-antiquewhite {
+  background-color: antiquewhite;
+}
+.bg-aliceblue {
+  background-color: aliceblue;
+}
+
 
 /*=================================
 0.6 Our Network
