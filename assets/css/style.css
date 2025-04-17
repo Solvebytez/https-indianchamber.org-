@@ -1442,6 +1442,10 @@ h3.post__title.typescale-2.custom-typescale-2--xxs {
     width: 100%;  /* Ensure images fill their container */
     height: auto;  /* Maintain aspect ratio */
 }
+h4.event-title.mb-3 {
+    font-size: 20px;
+    font-weight: 800;
+}
 
 /*===================================================
 0.7Latest News
