@@ -1293,11 +1293,12 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
     margin-top: 5px !important;
     margin-left: 31px;
 }
-#pastEventsCarousel {
+.event-slide {
     background: #f0f8ff;
     margin-top: 10px;
-    padding: 12px 18px 15px 0px;
-    border: 1px solid gainsboro;
+    width: 100%;
+    padding: 25px 21px 8px 18px;
+    /* border: 1px solid gainsboro; */
 }
 .bg-top {
     border-top: 2px solid;
