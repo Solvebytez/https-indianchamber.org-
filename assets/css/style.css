@@ -1996,6 +1996,48 @@ h4.service-title a {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+/*==================================
+0. contact-page
+======================================*/
+  .contact-content-box {
+    border: 1px solid;
+    padding: 20px;
+    background: #fff;
+}
+.contact-button {
+    /* text-align: justify; */
+    /* background: black; */
+    margin-left: 36px;
+}
+.contact-box {
+    background: #F8F8F8;
+    padding-top: 25px;
+}
+a.text-decoration-none.contact-btn {
+    background: #00235a;
+    padding: 3px 15px;
+    color: #fff;
+    font-weight: 600;
+}
+h3.icc-office-location-contant a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .4);
+}
+h3.icc-office-location-contant a:hover {    
+    color: #00235a;
+}
+a.office-links {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+a.office-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+}
  
   
   
