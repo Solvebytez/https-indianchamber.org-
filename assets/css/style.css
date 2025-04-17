@@ -1294,7 +1294,8 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
     margin-left: 31px;
 }
 #pastEventsCarousel {
-    background: red;
+    background: #f0f8ff;
+  
 }
 .bg-top {
     border-top: 2px solid;
