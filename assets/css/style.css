@@ -1602,6 +1602,9 @@ h3.Latest__title.text-decoration-none.typescale-2 {
     background-color: #fff;
     padding: 12px;
 }
+.process-wrap-content {
+    padding-left: 25px;
+}
 .card-body.d-flex {
     color: #000;
 }
