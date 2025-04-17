@@ -166,21 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //switzeland main crousel
-  $(document).ready(function(){
-    $("#iccCarousel").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 1000,
-      smartSpeed: 800,
-      nav: false,
-      dots: false,
-      responsive: {
-        0: { items: 1 },
-        768: { items: 1 }
-      }
-    });
+ $(document).ready(function(){
+  $("#iccCarousel").owlCarousel({
+    items: 1,               
+    loop: true,            
+    autoplay: true,         
+    autoplayTimeout: 1000, 
+       smartSpeed: 800,
+    dots: true,            
+    nav: false              
   });
+});
 
   $(document).ready(function(){
     $('#pastEventsCarousel').owlCarousel({
