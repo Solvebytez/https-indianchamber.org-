@@ -2023,7 +2023,7 @@ a.text-decoration-none.contact-btn {
 h3.icc-office-location-contant a {
     text-decoration: none;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(0, 0, 0, .4);
 }
 h3.icc-office-location-contant a:hover {    
@@ -2033,6 +2033,7 @@ a.office-links {
     color: #000;
     text-decoration: none;
     font-weight: 600;
+    font-size:14px;
 }
 a.office-links:hover{
   color:#000 !important;
