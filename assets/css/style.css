@@ -1881,6 +1881,7 @@ h4.service-title a {
 .icc-carousel-item {
     position: relative;
     text-align: center;
+  margin-left:-22px;
 }
 
 .icc-banner-content {
