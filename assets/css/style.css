@@ -1681,6 +1681,10 @@ color{
 h5.footer-text{
     color: #00235a;
 }
+.rounded {
+    border-radius: .25rem !important;
+    width: 216px !important;
+}
 
 /*====================================
 0.7 iccofficebearers.page
