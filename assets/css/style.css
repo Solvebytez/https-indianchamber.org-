@@ -1946,10 +1946,13 @@ a.btn-2:hover {
     font-size: 25px;
 }
 h3.service-heading.text-danger {
-    font-size: 24px;
+    font-size: 20px;
 }
-h4.service-title {
-    font-size: 14px;
+h5.service-title a {
+    font-size: 16px;
+}
+h4.service-title a {
+    font-size: 17px;
 }
 
 .text-truncate-multiline {
