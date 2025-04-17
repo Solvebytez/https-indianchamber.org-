@@ -195,6 +195,7 @@ header.top-header.top-header--skin-4{
 span.btn:hover{
     background-color: #00235a !important;
     border: none !important;
+      border: 2px solid #00235a !important;
 }
   .scroll-count-percent.active {
     display: flex;
@@ -1163,6 +1164,9 @@ img.attachment-ceris-s-1_1.size-ceris-s-1_1.wp-post-image {
     display: flex;
     justify-content: space-between; /* Ensures there's space between the two sides */
 }
+#member-card-content {
+    color: #000;
+}
 
 .carousel-item .post__thumb {
     flex: 50%; /* Image takes 50% width */
@@ -1734,6 +1738,7 @@ span.btn {
     color: #fff;
     padding: 4px 15px;
     border-radius: 5px;
+  border: 2px solid #00235a !important;
 }
 .object-fit-cover {
     object-fit: cover;
