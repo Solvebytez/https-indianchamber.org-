@@ -182,6 +182,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+$(document).ready(function(){
+  $('#upcomingEventsCarousel, #pastEventsCarousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: { items: 1 },
+      576: { items: 1 },
+      768: { items: 2 },
+      992: { items: 1 }
+    }
+  });
+});
+
+
    document.addEventListener('DOMContentLoaded', function () {
     const currentPage = window.location.pathname.split("/").pop() || "index.html"; // Default to homepage
 
