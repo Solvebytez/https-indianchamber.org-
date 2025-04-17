@@ -191,6 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
       items: 1, // Show 1 item at a time
       autoplay: true,
       autoplayTimeout: 1000,
+        smartSpeed: 800,
       responsive: {
         0: { items: 1 },
         576: { items: 1 },
