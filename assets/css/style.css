@@ -1943,32 +1943,44 @@ h4.list___heading {
 .card.border-0 {
     margin-top: -9px;
 }
-video { 
+.home {
+    height: 100vh;
+    position: relative;
+}
+video {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
-div#fashion {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.home-content {
+    position: relative;
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
 }
-
-h2 { 
-  font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
-  font-size: 8vmin;
-  text-align: center;
-  margin: 2rem 3rem 0;
-  mix-blend-mode: overlay;
-  color: #fff;
-  font-weight: 100;
+h1 {
+    font-family: Playfair Display, serif;
+    font-size: clamp(45px, 7vw, 130px);
+    line-height: 1.1;
 }
 
+.home p {
+    font-size: clamp(25px, 4vw, 40px);
+    margin-top: 10px;
+}
+
+.home-content button {
+    display: block;
+    font-size: clamp(14px, 1.5vw, 18px);
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 12px 20px;
+    cursor: pointer;
+}
 /*=====================================
 .08 Service
 ========================================*/
