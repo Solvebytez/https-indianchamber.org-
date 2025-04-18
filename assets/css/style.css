@@ -1102,7 +1102,7 @@ nav input{
 }
 
 .block-heading .block-heading__title {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-style: normal;
@@ -1565,7 +1565,7 @@ h3.post__title.typescale-2.custom-typescale-2--xxs {
     margin-right: .3em;
 }
 .mdicon {
-    font-family: mdicon !important;
+     font-family: 'Poppins', sans-serif !important;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -1966,7 +1966,7 @@ video {
     text-align: center;
 }
 h1 {
-    font-family: Playfair Display, serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(45px, 7vw, 130px);
     line-height: 1.1;
 }
@@ -2091,7 +2091,7 @@ h4.fw-bold {
     background-color: #cbdefc;
 }
 .intro-heading{
-    font-family: "poppins";
+    font-family: 'Poppins', sans-serif;
     color: #2f2483;    
     font-size: 33px;
 }
@@ -2109,7 +2109,7 @@ ul.list-unstyled li p {
 }
 .icc-contact-box h3 a {
     color: #2f2483 !important;
-    font-family: math;
+    font-family: 'Poppins', sans-serif;
 }
 #icc-contact {
     background-color: #cbdefc !important;
