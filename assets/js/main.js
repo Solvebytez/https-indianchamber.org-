@@ -179,24 +179,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
   $(document).ready(function(){
-    $('#pastEventsCarousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: true,
-      items: 1, // Show 1 item at a time
-      autoplay: true,
-      autoplayTimeout: 1000,
-        smartSpeed: 800,
-      responsive: {
-        0: { items: 1 },
-        576: { items: 1 },
-        768: { items: 1 },
-        992: { items: 1 }
-      }
+      $('#customFullWidthCarousel').owlCarousel({
+        items: 1,  // or 2, 3 depending on design
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        autoplay: true,
+          autoplayTimeout: 1000, 
+       smartSpeed: 800,
+       
+      });
     });
-  });
-
    document.addEventListener('DOMContentLoaded', function () {
     const currentPage = window.location.pathname.split("/").pop() || "index.html"; // Default to homepage
 
