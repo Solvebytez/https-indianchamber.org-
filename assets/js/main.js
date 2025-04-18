@@ -113,36 +113,39 @@ $(document).ready(function () {
 });
 //Scroll Percentage
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollPercent = document.querySelector(".scroll-count-percent");
-    const progressCircle = document.querySelector(".progress__value");
-    const percentText = document.querySelector(".percent-number-text");
-    const radius = progressCircle.r.baseVal.value;
-    const circumference = 2 * Math.PI * radius;
-  
-    progressCircle.style.strokeDasharray = `${circumference}`;
-    progressCircle.style.strokeDashoffset = `${circumference}`;
-  
-    function setProgress(percent) {
-      const offset = circumference - (percent / 100) * circumference;
-      progressCircle.style.strokeDashoffset = offset;
-      percentText.textContent = Math.round(percent);
+  const scrollPercent = document.querySelector(".scroll-count-percent");
+  const progressCircle = document.querySelector(".progress__value");
+  const percentText = document.querySelector(".percent-number-text");
+  const radius = progressCircle.r.baseVal.value;
+  const circumference = 2 * Math.PI * radius;
+
+  // Initial setup
+  scrollPercent.style.display = "none";
+  progressCircle.style.strokeDasharray = `${circumference}`;
+  progressCircle.style.strokeDashoffset = `${circumference}`;
+
+  function setProgress(percent) {
+    const offset = circumference - (percent / 100) * circumference;
+    progressCircle.style.strokeDashoffset = offset;
+    percentText.textContent = Math.round(percent);
+  }
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentValue = (scrollTop / docHeight) * 100;
+
+    // Toggle visibility
+    if (scrollTop > 100) {
+      scrollPercent.style.display = "block";
+    } else {
+      scrollPercent.style.display = "none";
     }
-  
-    window.addEventListener("scroll", function () {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercentValue = (scrollTop / docHeight) * 100;
-  
-      // Show scroll circle only after some scroll
-      if (scrollTop > 100) {
-        scrollPercent.classList.add("active");
-      } else {
-        scrollPercent.classList.remove("active");
-      }
-  
-      setProgress(scrollPercentValue);
-    });
+
+    setProgress(scrollPercentValue);
   });
+});
+
 
   //Go to btn
   document.addEventListener("DOMContentLoaded", function () {
