@@ -60,7 +60,7 @@ body {
 }
 .form-input:focus,
 .form-textarea:focus{
-    border-color: #00235a;
+    border-color: #ff6000;
     outline: none;
     transform: scale(1.02);
 }
