@@ -1428,18 +1428,18 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
     margin-top: 5px !important;
     margin-left: 31px;
 }
-#pastEventsCarousel {
+/*#pastEventsCarousel {
     background: #f0f8ff;
     margin-top: 13px;
     border: 1px solid gainsboro;
-}
-.event-slide {
-    /* background: #f0f8ff; */
+}*/
+/*.event-slide {
+    /* background: #f0f8ff;
     margin-top: 10px;
     width: 100%;
     padding: 9px 38px 8px 0px;
-    /* border: 1px solid gainsboro; */
-}
+    /* border: 1px solid gainsboro;
+}*/
 .bg-top {
     border-top: 2px solid;
     padding-top: 5px;
