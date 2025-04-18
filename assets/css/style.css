@@ -17,7 +17,10 @@ article.custom-event {
     padding: 10px;
     margin-top: 9px;
 }
-
+h5.custom-event-title.mt-2 a {
+    color: #000;
+    font-family: 'Poppins';
+}
 
 
 .form-wrapper{
