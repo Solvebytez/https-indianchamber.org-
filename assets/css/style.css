@@ -60,18 +60,18 @@ body {
 }
 .form-input:focus,
 .form-textarea:focus{
-    border-color: #6f6df4;
+    border-color: #00235a;
     outline: none;
     transform: scale(1.02);
 }
 .form-textarea{
     resize: none;
 }
-.submit-button{
+.submit-button {
     display: block;
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #6f6df4, #4c46f5);
+    background: linear-gradient(135deg, #00235a, #00235a);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -79,8 +79,8 @@ body {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
-.submit-button:hover{
-    background: linear-gradient(135deg, #4c46f5, #6f6df4);
+.submit-button:hover {
+    background: linear-gradient(135deg, #ff6000, #ff6000);
     transform: scale(1.05);
 }
 
