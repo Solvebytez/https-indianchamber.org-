@@ -323,7 +323,9 @@ header.top-header.top-header--skin-4{
 }
 
 
-
+.scroll-count-percent {
+  display: none;
+}
 
 .scroll-count-percent {
     position: fixed;
