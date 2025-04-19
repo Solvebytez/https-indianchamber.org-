@@ -119,8 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const radius = progressCircle.r.baseVal.value;
   const circumference = 2 * Math.PI * radius;
 
-  // Initial setup
-  scrollPercent.style.display = "none";
   progressCircle.style.strokeDasharray = `${circumference}`;
   progressCircle.style.strokeDashoffset = `${circumference}`;
 
@@ -135,11 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercentValue = (scrollTop / docHeight) * 100;
 
-    // Toggle visibility
+    // Show scroll circle only after some scroll
     if (scrollTop > 100) {
-      scrollPercent.style.display = "block";
+      scrollPercent.classList.add("active");
     } else {
-      scrollPercent.style.display = "none";
+      scrollPercent.classList.remove("active");
     }
 
     setProgress(scrollPercentValue);
