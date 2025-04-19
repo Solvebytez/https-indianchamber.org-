@@ -324,13 +324,30 @@ header.top-header.top-header--skin-4{
     } 
   
   }
-
+ @media (max-width: 992px) {
+.container-fluid {
+    max-width: 1222px;
+    border-radius: 5px;
+    /* line-height: 40px; */  
+  /*height:45px;*/
+    background: #fff !important;
+}
+}
 .container-fluid {
     max-width: 1222px;
     border-radius: 5px;
     /* line-height: 40px; */  
   /*height:45px;*/
     background: #ff6000;
+}
+ @media (max-width: 992px) {
+.container-fluid {
+    max-width: 1222px;
+    border-radius: 5px;
+    /* line-height: 40px; */  
+  /*height:45px;*/
+    background: #fff !important;
+}
 }
 .container {
     max-width: 1250px !important;
