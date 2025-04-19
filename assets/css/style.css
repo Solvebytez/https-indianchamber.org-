@@ -486,12 +486,12 @@ header.top-header.top-header--skin-4 {
 .header-main {
     padding: 15px 0;
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .container {
         width: 1250px;
-        /* width: 1300px; */
+        /* width: 1300px; 
     }
-}
+}*/
 @media (min-width: 970px) {
    i.fa-solid.fa-angle-down {
         display:none;
