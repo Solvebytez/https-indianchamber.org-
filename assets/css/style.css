@@ -280,6 +280,7 @@ a.nav-link {
 
   .navbar .main-logo {
   display: block;
+    line-height:58px;
 }
 header.top-header.top-header--skin-4{
     background: #fff;
