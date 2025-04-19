@@ -9,11 +9,10 @@
 body {
     overflow-x: hidden; 
   }
-.dropdown-menu .dropdown-item.active,
-.dropdown-menu .dropdown-item:active {
-  background-color: transparent !important;
-  color: inherit !important;
-  text-decoration: none;
+.dropdown-menu .dropdown-item.active, .dropdown-menu .dropdown-item:active {
+    background-color: #00235a !important;
+    color: #fff !important;
+    text-decoration: none;
 }
 article.custom-event {
     margin-left: -21px;
