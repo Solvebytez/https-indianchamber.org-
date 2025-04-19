@@ -314,6 +314,10 @@ header.top-header.top-header--skin-4{
     .navbar .dropdown:hover .dropdown-menu {
       display: block;
     } 
+   .container-fluid{
+     background:#fff;
+     height:50px;
+   }
   }
 
 .container-fluid {
