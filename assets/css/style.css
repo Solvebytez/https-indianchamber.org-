@@ -466,6 +466,9 @@ header.top-header.top-header--skin-4 {
   #btnScrollTop{
     display:none;
   }
+  .latest-slider{
+        padding: 0px;
+  }
 }
 .top-header {
     position: relative;
