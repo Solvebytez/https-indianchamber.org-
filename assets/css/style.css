@@ -1961,7 +1961,11 @@ h5.footer-text{
     z-index: 1;
   }
   
-  
+  .latest-slider {
+    width: 100%;
+    margin-left: 102px;
+    max-width: 85%;
+}
   .banner-section .container {
     z-index: 2;
   }
