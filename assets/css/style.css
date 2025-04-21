@@ -1505,7 +1505,7 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
 .bg-top {
     border-top: 2px solid;
     padding-top: 5px;
-    margin-left: -32px;
+   /* margin-left: -32px;*/
 }
  .featured__title {
     margin-bottom: 5px;
@@ -1531,7 +1531,7 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
 .bg-botm {
     border-bottom: 2px solid;
     padding-bottom: 5px;
-    margin-left: -31px;
+   /* margin-left: -31px;*/
 }
 
 
