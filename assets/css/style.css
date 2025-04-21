@@ -199,11 +199,7 @@ h5.custom-event-title.mt-2 a {
 ul.navbar-nav .nav-item {
     padding-left: 12px;
 }
-.dropdown-menu {
-  position: static !important;
-  transform: none !important;
-  inset: auto !important;
-}
+
 .nav-links li > a {
     text-transform: capitalize;
     color: #333;
