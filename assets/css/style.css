@@ -460,6 +460,9 @@ header.top-header.top-header--skin-4 {
     header.top-header.top-header--skin-4 {
         background: #fff;
     }
+  .scroll-count-percent.active{
+    display:none;
+  }
 }
 .top-header {
     position: relative;
