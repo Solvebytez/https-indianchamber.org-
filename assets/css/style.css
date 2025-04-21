@@ -1878,7 +1878,7 @@ h5.event-heading.fs-6.mt-2 a {
 .overlay-card {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     width: 100%;
     max-width: 85%;
 }
