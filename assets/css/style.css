@@ -180,7 +180,10 @@ h5.custom-event-title.mt-2 a {
     background-color: #333;
     color: #fff;
 }*/
-
+#network-slider {
+    width: 100%;
+    margin-left: -22px;
+}
 
  .nav-item.active > {
     background-color: #333;
