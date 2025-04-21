@@ -1242,6 +1242,9 @@ nav input{
     border-image-slice: 35;
     border-image-repeat: round;
 }
+.carousel-testimonia.owl-carousel.owl-theme {
+    margin-left: -28px;
+}
 .exclusive--vertical-reverse-text-wrap .exclusive__text {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 2;
