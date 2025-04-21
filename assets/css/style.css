@@ -53,6 +53,9 @@ h5.custom-event-title.mt-2 a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease-out;
 }
+.the-heading-size-md {
+    padding-bottom: 23px;
+}
 .title{
     font-size: 28px;
     text-align: center;
