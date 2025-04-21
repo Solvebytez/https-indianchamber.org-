@@ -2303,6 +2303,10 @@ a.office-link {
 a.office-link:hover {   
     color: rgba(0, 0, 0, .6);
 }
+.event-block.border.bg-aliceblue {
+    padding-left: 12px;
+    padding-top: 8px;
+}
  
   
   
