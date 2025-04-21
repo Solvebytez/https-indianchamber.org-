@@ -2336,6 +2336,12 @@ a.office-link:hover {
   footer.custom-footer.bg-light.text-dark.pt-5.pb-3 {
     text-align: center;
 }
+  .ratio.ratio-4x3.rounded.overflow-hidden.shadow-sm {
+    width: 100%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
  
   
