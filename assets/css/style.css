@@ -2316,6 +2316,11 @@ a.office-link:hover {
     padding-left: 12px;
     padding-top: 8px;
 }
+@media (max-width: 992px) {
+  #left-slider{
+        padding: 0px;
+  }
+}
  
   
   
