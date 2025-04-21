@@ -2263,7 +2263,14 @@ h4.service-title a {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
+@media (max-width: 992px) {
+    .latest-slider {
+        padding: 0px;
+        margin-left: 1px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
 /*==================================
 0. contact-page
 ======================================*/
