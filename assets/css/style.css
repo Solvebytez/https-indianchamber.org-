@@ -1814,9 +1814,11 @@ h3.Latest__title.text-decoration-none.typescale-2 {
     border: none !important; /* Removes border */
   background-color: #fdfdfd00 !important;
 }
-#resources-box{
+#resources-box {
     background-color: #fff;
     padding: 12px;
+    width: 98%;
+    margin-left: 10px;
 }
 .process-wrap-content {
     padding-left: 25px;
