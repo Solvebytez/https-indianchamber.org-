@@ -1488,7 +1488,7 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
     padding: 9px;
     border-radius: 5px;
     margin-top: 5px !important;
-    margin-left: 31px;
+    /*margin-left: 31px;*/
 }
 /*#pastEventsCarousel {
     background: #f0f8ff;
@@ -1551,7 +1551,7 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
     -o-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
-    margin-left: 31px;
+   /* margin-left: 31px;*/
 }
 .featured__btn [class*=js-ajax-load-] {
     color: #fff !important;
