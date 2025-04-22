@@ -33,29 +33,33 @@ $(document).ready(function () {
 });
 
 // Left & Right Sliders
-$(document).ready(function () {
-    $("#left-slider").owlCarousel({
-        loop: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        smartSpeed: 1000,
-        dots: false,
-        nav: false
-    });
-});
-$(document).ready(function () {
-    $("#right-slider").owlCarousel({
-        loop: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        smartSpeed: 1000,
-        dots: false,
-        nav: false
-    });
+const swiper = new Swiper('.mySwiper', {
+  loop: false,
+  autoplay: {
+    delay: 9000,
+    disableOnInteraction: false,
+  },
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
 
+
+ // Initialize the Swiper for the right slider
+ var swiperRight = new Swiper('.mySwipers', {
+  slidesPerView: 1, // Number of slides visible at once
+  spaceBetween: 10, // Space between slides
+  loop: true, // Enable looping of slides
+  autoplay: {
+    delay: 5000, // Autoplay interval in milliseconds
+  },
+  pagination: {
+    el: '.swiper-pagination', // Pagination element
+    clickable: true, // Enable pagination clicks
+  },  
+});
 
 
 $('.carousel-testimonia').owlCarousel({
