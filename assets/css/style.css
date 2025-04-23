@@ -1602,6 +1602,12 @@ a.post__cat.post__cat--bg, a.post__cat.post__cat--bg[class*=cat-] {
 h4.post-heading {
     font-size: 18px;
 }
+#carouselExampleControls {
+    background: #f0f8ff;
+    padding: 10px;
+    margin-top: 11px;
+    border: 1px solid #e1e1e1;
+}
 
 
 /*===========================================]
