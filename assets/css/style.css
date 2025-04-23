@@ -2390,6 +2390,9 @@ a.office-link:hover {
     padding-left: 12px;
     padding-top: 8px;
 }
+.past-events-box {
+    margin-left: 26px;
+}
 .me-3.member-post-heading {
     width: 34px;
 }
