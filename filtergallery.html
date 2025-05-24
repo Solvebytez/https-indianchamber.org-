@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filter + View More Grid</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+  <style>
+    /*.gal {
+      column-count: 3;
+      column-gap: 1rem;
+    }*/
+
+    .img-hover-zoom {
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border-radius: 15px;
+    }
+
+    .img-hover-zoom img {
+      width: 100%;
+      transition: transform 0.4s ease;
+      border-radius: 15px;
+    }
+
+    .img-hover-zoom:hover img {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    img.filtrab-logo {
+      width: 100%;
+      height: 71px;
+      margin-top: -10px;
+      padding-bottom: 10px;
+    }
+
+    img.filtrabs-logo {
+      width: 100%;
+      height: 61px;
+      display: none;
+    }
+
+    button.site-action-trigger {
+      position: relative;
+      width: 22px;
+      height: 26px;
+      margin-left: 28px;
+      font-size: 22px;
+      text-align: left;
+      color: #666;
+      border: none;
+      background: transparent;
+      /* display: flex
+; */
+    }
+
+    #search-btn {
+      display: none;
+      margin-left: 10rem;
+      margin-right: -190px;
+    }
+
+    @media (max-width: 768px) {
+      .gal {
+        column-count: 1;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .filter-btns {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (max-width: 767.98px) {
+        .filter-btns.active {
+          flex-direction: column;
+          display: flex;
+          width: 100%;
+          position: relative;
+          margin-left: -250px;
+          padding: 12px 24px;
+          border-bottom: 1px solid #eee;
+          margin-top: -2rem !important;
+        }
+      }
+
+      img.filtrab-logo {
+        display: none;
+      }
+
+      img.filtrabs-logo {
+        display: block;
+      }
+
+      #search-btn {
+        display: inline-block;
+      }
+
+      button.site-action-trigger {
+        display: none;
+      }
+
+      div#filter-Btn {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+      button#nav-tab {
+        display: block;
+        padding: 12px 24px;
+        border-bottom: 1px solid #eee;
+        width: 180%;
+      }
+
+      div#filter-Btn {
+        position: relative;
+        margin-top: 30px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      #menuToggle {
+        display: none;
+      }
+
+    }
+
+
+    .filter-btns {
+      transition: all 0.3s ease;
+    }
+
+    button#menuToggle {
+      position: absolute;
+      margin-top: -79px;
+      margin-left: 5rem;
+      font-size: 41px;
+      background-color: transparent;
+      border: none;
+    }
+
+
+
+
+    .newsletter-section {
+      background-color: #0063c5;
+      background-color: rgb(219, 246, 255);
+      padding: 3rem 0px;
+    }
+
+    #newsletterForm .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
+
+    #newsletterSubmit:hover {
+      background-color: #0b5ed7;
+    }
+
+    form#newsletterForm {
+      width: 100%;
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-hover-zoom {
+      position: relative;
+      overflow: hidden;
+      /* display: inline-block;*/
+    }
+
+    .img-hover-zoom img {
+      transition: transform 0.5s ease;
+      display: block;
+      width: 100%;
+      height: auto;
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+    }
+
+    .img-hover-zoom:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Overlay container */
+    .overlay-content {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: white;
+      background: rgb(0 0 0 / 14%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 4.3s ease;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .btm-box a {
+      font-size: 12px;
+      color: #888;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .box-title {
+      font-size: 18px;
+      color: #002f6c;
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+
+    .overlay-box-content p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      font-size: 14px;
+      font-weight: bold;
+      color: #002f6c;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .read-more:hover {
+      color: #0056b3;
+    }
+
+    .overlay-box-content {
+      background: #fff;
+      margin: -10px 10px 0 10px;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      position: relative;
+    }
+    .footer-social-icons a.social-icon {
+    padding: 0 10px;
+}
+ul.list-unstyled.d-flex.flex-wrap.gap-3.footer-nav-links {
+    width: 100%;
+    max-width: 75%;
+    margin-left: auto;
+}
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <div class="filtrabel">
+    <div class="filtrab-nav">
+
+      <!-- Hamburger Icon -->
+      <div class="text-center filter-btn" id="filter-Btn">
+        <button class="btn" id="logo-filter" data-filter="all">
+          <img class="filtrabs-logo" src="./assets/img/logo/logo.png" alt="logo">
+        </button>
+        <button class="site-action-trigger" id="search-btn">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <button class="menu-trigger hamburger-menu" id="menuToggle">
+        <span class="bi bi-list"></span>
+      </button>
+
+
+      <!-- Filter Buttons -->
+      <div class="text-center filter-btns " id="filterBtns">
+        <button class="btn" id="logo-filter" data-filter="all">
+          <img class="filtrab-logo" src="./assets/img/logo/logo.png" alt="logo">
+        </button>        
+        <button class="btn" id="nav-tab" data-filter="very">Business & Industry</button>
+        <button class="btn" id="nav-tab" data-filter="cute">Finance & Economy</button>
+        <button class="btn" id="nav-tab" data-filter="jellyfish">Finance & Economy</button>
+        <button class="btn" id="nav-tab" data-filter="Health & Lifestyle">Health & Lifestyle</button>
+        <button class="btn" id="nav-tab" data-filter="Others">Others</button>
+        <button class="btn" id="nav-tab" data-filter="Sector Watch">Sector Watch</button>
+        <!-- Search Icon -->
+        <button class="site-action-trigger">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+    <section class="banner-section position-relative text-white text-center">
+      <!-- Background Image -->
+      <div class="bg-image"></div>
+
+      <!-- Overlay -->
+      <div class="overlay"></div>
+
+      <!-- Content -->
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative z-1">
+        <a href="#explore" class="btn btn-blue-800 mt-3">Welcome To ICC Blogs</a>
+        <h1 class="lh-lg fs-3 display-4 fw-bold">Explore Our Latest Articles & Sector Updates</h1>
+        <nav class="Building-ceris-pagination text-left">
+          <button class="Building__btn-default js-ajax-load-post-trigger">
+            <a href="#" class="text-decoration-none" style="color: #fff !important;">Read
+              more</a>
+          </button>
+        </nav>
+
+      </div>
+    </section>
+
+    <div class="container mt-5 pb-5">
+      <div class="row">
+        <h3 class="fs-1 pb-3 mb-5 mt-5">Read Articles by Categories</h3>
+        <div class="gal" id="gallery">
+          <!-- Images with categories -->
+          <div class="container">
+            <div class="row">
+             <div class="col-md-4 col-sm-6">
+               <div class="img-hover-zoom" data-category="cute">
+            <img src="./assets/img/member/BannerBI.png" alt="Cute">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+             </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="jellyfish">
+            <img src="./assets/img/member/pexels-pixabay-256381-scaled.jpg" alt="Jellyfish">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+          </div>
+         <div class="col-md-4 col-sm-6">
+           <div class="img-hover-zoom" data-category="very">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Very">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+         </div>
+         <div class="col-md-4 col-sm-6">
+           <div class="img-hover-zoom" data-category="very">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Very">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+         </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="jellyfish">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Jellyfish">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+          </div>
+         <div class="col-md-4 col-sm-6">
+           <div class="img-hover-zoom" data-category="cute">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Cute">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+         </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="Sector Watch">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Sector Watch">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4 col-sm6">
+             <div class="img-hover-zoom" data-category="Others">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Others">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+          </div>
+         
+          <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="Health & Lifestyle">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Health & Lifestyle">
+            <div class="overlay-content">
+              <h3 class="mt-5 pt-5">This is a Jellyfish</h3>
+            </div>
+          </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container  pb-5">
+      <div class="row">
+        <h3 class="fs-1 pb-3 mt-5">Latest Articles</h3>
+        <div class="gal" id="gallery">
+          <!-- Images with categories -->
+           <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="cute">
+            <img src="./assets/img/member/BannerBI.png" alt="Cute">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>
+           <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="jellyfish">
+            <img src="./assets/img/member/pexels-pixabay-256381-scaled.jpg" alt="Jellyfish">
+           <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>
+           <div class="col-md-4 col-sm-6">
+             <div class="img-hover-zoom" data-category="very">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Very">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div> 
+           <div class="col-md-4 col-sm-6">
+             <div class="img-hover-zoom" data-category="very">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Very">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>  
+           <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="jellyfish">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Jellyfish">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>
+           <div class="col-md-4 col-sm-6">
+             <div class="img-hover-zoom" data-category="cute">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Cute">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>  
+           <div class="col-md-4 col-sm-6">
+             <div class="img-hover-zoom" data-category="Sector Watch">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Sector Watch">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div> 
+           <div class="col-md-4 col-sm-6">
+            <div class="img-hover-zoom" data-category="Others">
+            <img src="./assets/img/member/service-sector-economy-16359356574x3-1.jpg" alt="Others">
+           <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div> 
+           <div class="col-md-4 col-sm-6">
+              <div class="img-hover-zoom" data-category="Health & Lifestyle">
+            <img src="./assets/img/member/pexels-engin-akyurt-1435822-scaled.jpg" alt="Health & Lifestyle">
+            <div class="overlay-box-content">
+              <div class="btm-box">
+                <a href="#">Business &amp; Industry</a>
+              </div>
+              <a href="#">
+                <h2 class="box-title">ICC Textile Conclave 2025: The May 22 Meet in Coimbatore</h2>
+                <p>India’s textile and apparel industry, one of the oldest and most culturally rooted sectors of the
+                  economy, is now undergoing…</p>
+              </a>
+              <a href="#" class="read-more">READ MORE →</a>
+            </div>
+          </div>
+           </div>     
+            </div>
+           </div>                                                                            
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="newsletter-section py-5 ">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <h3 class="mb-4 fw-bold">Subscribe Our Newsletter</h3>
+          <form id="newsletterForm" action="#" method="post" class="needs-validation" novalidate>
+            <div class="input-group mb-3 shadow-sm">
+              <input type="email" class="form-control border-0 py-2 px-3" id="newsletterEmail" name="email"
+                placeholder="Enter your email" required>
+              <button class="btn btn-primary px-4" type="submit" id="newsletterSubmit">Subscribe</button>
+            </div>
+
+          </form>
+          <div id="newsletterMessage" class="mt-3 text-success d-none">Thank you for subscribing!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="iccFooter" class="bg-light text-white pt-5 pb-5 text-center">
+  <div class="iccFooter-section">
+    <div class="row justify-content-between align-items-start">
+
+      <!-- Social Media Links -->
+      <div class="text-center mb-4">       
+        <div class=" gap-5 footer-social-icons text-center">
+          <a class="social-icon" href="https://www.facebook.com/IndianChamber" class="text-blue fs-4 gap-3" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/indianchamber/" class="text-blue fs-4 gap-3" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="social-icon" href="https://twitter.com/ICC_Chamber" class="text-blue fs-4 gap-3" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/indianchamberofcommerce/" class="text-blue fs-4 gap-3" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="social-icon" href="https://www.tumblr.com/blog/indianchamber" class="text-blue fs-4" target="_blank" aria-label="Tumblr">
+            <i class="fab fa-tumblr"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class=" mb-3 border-top text-center pt-3 ">        
+        <ul class="list-unstyled d-flex flex-wrap gap-3 footer-nav-links">
+          <li><a href="https://www.indianchamber.org/" target="_blank" class="text-dark text-decoration-none">Visit Main Website</a></li>
+          <li><a href="https://www.indianchamber.org/the-chamber/" target="_blank" class="text-dark text-decoration-none">About ICC</a></li>
+          <li><a href="https://www.indianchamber.org/contact-us/" target="_blank" class="text-dark text-decoration-none">Contact Us</a></li>
+          <li><a href="https://blogs.indianchamber.org/privacy-policy/" class="text-dark text-decoration-none">Privacy Policy</a></li>
+          <li><a href="https://blogs.indianchamber.org/terms-of-use/" class="text-dark text-decoration-none">Terms of Use</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center ">
+        <small class="text-dark">
+          &copy; 2025 Indian Chamber of Commerce — Powered by
+          <a href="https://www.timdtech.com/" class="text-dark fw-bold text-decoration-underline" target="_blank">TimD</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+ <script>
+  const buttons = document.querySelectorAll('.filter-btns .btn');
+  const items = document.querySelectorAll('#gallery .img-hover-zoom');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      items.forEach(item => {
+        const category = item.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          item.classList.remove('d-none');
+        } else {
+          item.classList.add('d-none');
+        }
+      });
+    });
+  });
+</script>
+
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', function () {
+      document.getElementById('filterBtns').classList.toggle('active');
+    });
+  </script>
+  <script>
+
+    (() => {
+      const form = document.getElementById('newsletterForm');
+      const message = document.getElementById('newsletterMessage');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (form.checkValidity()) {
+          message.classList.remove('d-none');
+          form.reset();
+        } else {
+          form.classList.add('was-validated');
+        }
+      });
+    })();
+  </script>
+
+
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+
+</body>
+
+</html>
