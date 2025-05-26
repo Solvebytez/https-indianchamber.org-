@@ -265,6 +265,11 @@ ul.list-unstyled.d-flex.flex-wrap.gap-3.footer-nav-links {
     max-width: 75%;
     margin-left: auto;
 }
+    #gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   </style>
 
 
@@ -649,27 +654,29 @@ ul.list-unstyled.d-flex.flex-wrap.gap-3.footer-nav-links {
 </footer>
 
 
- <script>
-  const buttons = document.querySelectorAll('.filter-btns .btn');
-  const items = document.querySelectorAll('#gallery .img-hover-zoom');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
+  <script>
+const buttons = document.querySelectorAll('.filter-btns .btn');
+const items = document.querySelectorAll('#gallery .img-hover-zoom');
 
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      items.forEach(item => {
-        const category = item.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          item.classList.remove('d-none');
-        } else {
-          item.classList.add('d-none');
-        }
-      });
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.getAttribute('data-filter');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    items.forEach(item => {
+      const category = item.getAttribute('data-category');
+      if (filter === 'all' || category === filter) {
+        item.parentElement.classList.remove('d-none'); // parentElement ko show karein
+        item.style.display = 'block';
+      } else {
+        item.parentElement.classList.add('d-none'); // parentElement ko hide karein
+        item.style.display = 'none';
+      }
     });
   });
+});
+</script>
 </script>
 
 
@@ -678,7 +685,7 @@ ul.list-unstyled.d-flex.flex-wrap.gap-3.footer-nav-links {
       document.getElementById('filterBtns').classList.toggle('active');
     });
   </script>
-  <script>
+
 
     (() => {
       const form = document.getElementById('newsletterForm');
