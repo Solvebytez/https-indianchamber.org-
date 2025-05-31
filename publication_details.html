@@ -14,7 +14,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <style>
+        #flipbook {
+            width: 100%;
+            height: 700px;
+        }
 
+        #flipbook .turn-page {
+            background-color: #ccc;
+        }
+
+        #flipbook img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #flipbook-container {
+            display: none;
+        }
+
+        #close-flipbook {
+            display: none;
+        }
+
+        #close-flipbook,
+        #prev-page,
+        #next-page {
+            display: none;
+        }
+    </style>
 
 </head>
 
@@ -344,6 +372,7 @@
     </header>
 
 
+
     <!--Header-section End-->
     <section class="banner-section position-relative text-white text-center">
         <!-- Background Image -->
@@ -366,7 +395,7 @@
 
                 <!-- Form Column -->
                 <div class="col-md-8">
-                    <div class="custom-form-section">                        
+                    <div class="custom-form-section">
                         <form method="post" id="orgForm" name="orgForm" action="publication_detailsDo.php"
                             enctype="multipart/form-data">
 
@@ -405,9 +434,10 @@
                 </div>
 
                 <!-- Card Column -->
+                <!-- Image par click event assign -->
                 <div class="col-md-4">
                     <div class="publication-overlay-card position-relative overflow-hidden rounded-3">
-                        <a href="publication_details.php?singleids=NjM=" class="d-block">
+                        <a href="#flipbook" class="d-block" id="flipbook-link">
                             <img src="./assets/img/reso/1747397646image.jpg" class="img-fluid w-100"
                                 alt="Startupreneur Jan 2025">
                             <div class="overlay-headings position-absolute bottom-0 text-center fw-bold text-white p-3">
@@ -417,109 +447,98 @@
                     </div>
                 </div>
 
+
+
             </div>
         </div>
 
     </div>
+    <!-- Flipbook container -->
 
 
+    <div id="flipbook-container"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;">
+        <div style="position: relative; width: 1100px; height: 700px; margin: 50px auto;">
+            <div id="flipbook"></div>
+            <button id="close-flipbook" style=" position: absolute; top: 10px; right: 10px;">Close</button>
+            <button id="prev-page" style="position: absolute; top: 50%; left: 10px;">Previous</button>
+            <button id="next-page" style="position: absolute; top: 50%; right: 10px;">Next</button>
 
-
-
-
-
-
-    <!--Footer-->
-    <footer class="custom-footer bg-light text-dark pt-5 pb-3">
-        <div class="container">
-            <div class="row gy-4">
-
-                <!-- 1. Head Office -->
-                <div class="col-12 col-md-3">
-                    <h5 class="footer-text fw-bold">HEAD OFFICE</h5>
-                    <p class="small">
-                        Indian Chamber of <color>Commerce,</color><br>
-                        India Exchange Place,<br>
-                        Kolkata-700001<br>
-                        Phone: <a href="tel:+91-33-22303242-44" class="footer-contect">+91-33-22303242-44</a><br>
-                        Fax: +91-33-22313377 / 3380<br>
-                        Email: <a href="mailto:ceo@indianchamber.net" class="footer-contect">ceo@indianchamber.net</a>
-                    </p>
-                </div>
-
-                <!-- 2. Map -->
-                <div class="col-12 col-md-3">
-                    <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
-                        <iframe
-                            src="https://www.google.com/maps?q=Indian+Chamber+of+Commerce,+India+Exchange+Place,+Kolkata-700001&output=embed"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-
-                <!-- 3. Quick Links -->
-                <div class="col-12 col-md-2">
-                    <h6 class="fw-bold text-uppercase">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#" class="text-dark">Career</a></li>
-                        <li><a href="#" class="text-dark">Facilities</a></li>
-                        <li><a href="#" class="text-dark">Useful Links</a></li>
-                        <li><a href="#" class="text-dark">Membership</a></li>
-                        <li><a href="#" class="text-dark">FAQs</a></li>
-                    </ul>
-                </div>
-
-                <!-- 4. Explore -->
-                <div class="col-12 col-md-2">
-                    <h6 class="fw-bold text-uppercase">Explore</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#" class="text-dark">The Chamber</a></li>
-                        <li><a href="#" class="text-dark">Services</a></li>
-                        <li><a href="#" class="text-dark">Sectors</a></li>
-                        <li><a href="#" class="text-dark">ICC Chapters</a></li>
-                        <li><a href="#" class="text-dark">International</a></li>
-                    </ul>
-                </div>
-
-                <!-- 5. Resources -->
-                <div class="col-12 col-md-2">
-                    <h6 class="fw-bold text-uppercase">Resources</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#" class="text-dark">Circular by DG</a></li>
-                        <li><a href="#" class="text-dark">Member’s Helpline</a></li>
-                        <li><a href="#" class="text-dark">Allied Organisation</a></li>
-                        <li><a href="#" class="text-dark">B2B</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <hr class="my-4">
-
-            <!-- Bottom Footer -->
-            <div class="row justify-content-between align-items-center text-center text-md-start">
-                <div class="col-md-6">
-                    <ul class="list-inline mb-0 small">
-                        <li class="list-inline-item"><a href="#" class="text-dark">Terms &amp; Conditions</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark">topmap</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 text-md-end mt-3 mt-md-0">
-                    <span class="text-muted small">BY Paulami Niyogi Consulting</span>
-                </div>
-            </div>
         </div>
-    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
+    <script src="./assets/turn.js-master/turn.js-master/turn.js"></script>
+    <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.worker.min.js';
+var pdfPath = 'http://127.0.0.1:5501/assets/12023.pdf';
 
-
-
-
-
+$('#flipbook-link').click(function(e) {
+  e.preventDefault();
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', pdfPath, true);
+  xhr.responseType = 'arraybuffer';
+  xhr.onload = function(e) {
+    var arrayBuffer = xhr.response;
+    pdfjsLib.getDocument({ data: arrayBuffer }).promise.then(function(pdf) {
+      var promises = [];
+      $('#flipbook').empty(); // Pehle se load hui pages ko remove karein
+      for (var i = 1; i <= pdf.numPages; i++) {
+        promises.push(pdf.getPage(i).then(function(page) {
+          console.log('Page loaded');
+          var scale = 1.5;
+          var viewport = page.getViewport({ scale: scale });
+          var canvas = document.createElement('canvas');
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          var renderContext = {
+            canvasContext: canvas.getContext('2d'),
+            viewport: viewport
+          };
+          return page.render(renderContext).promise.then(function() {
+            var imgData = canvas.toDataURL();
+            // Flipbook mein page add karne ke liye
+            $('#flipbook').append('<div class="page"><img src="' + imgData + '"></div>');
+            console.log('Page added');
+          });
+        }));
+      }
+      Promise.all(promises).then(function() {
+        $('#flipbook').turn({
+          width: 1100,
+          height: 700,
+          gradients: true,
+          acceleration: true,
+          pages: pdf.numPages,          
+          duration: 1000,
+        });
+        $('#flipbook-container').show();
+        $('#flipbook').turn('page', 1); // Flipbook ko pehle page par open karein
+        // Close button par click event assign
+        $('#close-flipbook').click(function() {
+          $('#flipbook-container').hide();
+          $('#close-flipbook, #prev-page, #next-page').hide();
+        });
+        // Previous button par click event assign
+        $('#prev-page').click(function() {
+          $('#flipbook').turn('previous');
+        });
+        // Next button par click event assign
+        $('#next-page').click(function() {
+          $('#flipbook').turn('next');
+        });
+        $('#close-flipbook, #prev-page, #next-page').show();
+      });
+    });
+  };
+  xhr.send();
+});
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
