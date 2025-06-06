@@ -232,3 +232,76 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+$(document).ready(function () {
+  $('.owl-main-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000, // Time between slides
+    autoplayHoverPause: true, // Pause on hover
+    items: 1,
+    nav: true,
+    dots: true,
+    navText: ["<", ">"],
+    smartSpeed: 800 // Transition speed
+  });
+});
+
+//thumblain-slide
+const slides = document.querySelectorAll('.thumbslide');
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const slideText = document.getElementById('slide-text');
+  const thumbnailsContainer = document.getElementById('thumbnails');
+
+  const slideData = [
+    { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
+    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
+    { title: 'Westside', link: 'https://www.westside.com/' },
+    // Add more data objects as per number of slides
+  ];
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+    thumbnails.forEach((thumb, i) => thumb.classList.toggle('active', i === index));
+    slideText.innerHTML = `
+      <h1>${slideData[index].title}</h1>
+      <a href="${slideData[index].link}" target="_blank">Visit Brand</a>
+    `;
+    currentIndex = index;
+  }
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const index = parseInt(thumb.dataset.index);
+      showSlide(index);
+    });
+  });
+
+  function scrollThumbnails(direction) {
+    const scrollAmount = 200; // You can change scroll speed
+    thumbnailsContainer.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 4000);
