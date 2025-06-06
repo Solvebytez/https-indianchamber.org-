@@ -43,6 +43,56 @@ h5.custom-event-title.mt-2 a {
     color: #000;
     font-family: 'Poppins';
 }
+.sub-menu {
+    position: absolute;
+  display: none;  
+  background: #fff;
+  list-style: none; 
+  width: 231px;
+    line-height: 45px; 
+     overflow-y: auto;
+  height: 300px; /* define height */
+    
+}
+
+ 
+
+li:hover > .sub-menu {
+  display: block;
+}
+li:hover > .sub-menus {
+  display: block;
+}
+
+.more-sub-menus {
+    position: fixed;
+    left: 41%;
+    top: 128px;
+    display: none;
+      overflow-y: auto;
+  height: 300px; /* define height */
+    background: #fff;
+    width: 230px;
+}
+.sub-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 0px;
+    color: #000;
+    font-weight: 400;
+    border-radius: 0px;
+ }
+
+.more:hover .more-sub-menu {
+  display: block;
+}
+.more:hover .more-sub-menus {
+  display: block;
+}
+
+.arrow { 
+  font-size: 12px;
+}
 
 
 .form-wrapper {
@@ -815,6 +865,297 @@ div#left-carousel {
     cursor: pointer;
     
 }
+/*=====main-slider===*/
+.owl-main-carousel .item {
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+    }
+  .owl-main-carousel.owl-theme.owl-carousel.owl-theme .owl-controls {
+    display: inline-block;
+    zoom: 1;
+    margin-left: 50%;
+    margin-top: -43px;
+    position: absolute;
+}
+
+    .slides-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    .slide-text h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .slide-text p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5) !important;
+      color: #fff !important;
+      border-radius: 50%;
+      padding: 10px !important;
+      border: none;
+    }
+
+    .owl-nav .owl-prev {
+      left: 10px;
+    }
+
+    .owl-nav .owl-next {
+      right: 10px;
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .owl-dots .owl-dot span {
+      background: #fff;
+    }
+
+    .owl-dots .owl-dot.active span {
+      background: #007bff;
+    }
+
+    /*thumblain-slide*/
+     .mainslider-container {
+      position: relative;
+      overflow: hidden;
+      height: 80vh;
+    }
+     .mainslider-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      height: 80vh;
+    }
+ .arrow-left {
+      left: 5px;
+    }
+
+    .arrow-right {
+      right: 5px;
+    }
+    .thumbslide{
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .thumbslide.active {
+      display: block;
+      animation: slideIn 0.8s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 80px;
+      left: 50px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .slide-text h1 { margin: 0; font-size: 36px; }
+    .slide-text a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+.thumbnail-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #11106a;
+    padding: 10px 40px;
+}
+
+    .arrow-button {
+      font-size: 30px;
+      cursor: pointer;    
+      user-select: none;
+      color: #333;
+    }
+
+    .thumbnails {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 10px 0;
+    }
+
+    .thumbnail {
+      flex: 0 0 auto;
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      border: 2px solid transparent;
+    }
+
+    .thumbnail.active {
+      opacity: 1;
+      border-color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .slide-text { left: 20px; right: 20px; padding: 15px; bottom: 40px; }
+      .slide-text h1 { font-size: 24px; }
+    }
+   
+
+   
+
+    .slides-wrapper {
+      display: flex;
+      width: 300%;
+      transition: transform 0.7s ease-in-out;
+      height: 100%;
+    }
+
+    .thumbslide{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 80px;
+      left: 50px;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+
+    .slide-text h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .slide-text a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: white;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+     .slides-text {
+      position: absolute;
+      bottom: 80px;
+      left: 50px;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+
+    .slides-text h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .slides-text a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: white;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+ 
+
+    .thumbnails {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 15px;
+      padding: 10px 0;
+      scrollbar-width: none;
+    }
+
+    .thumbnails::-webkit-scrollbar {
+      display: none;
+    }
+
+    .thumbnail {
+      flex: 0 0 auto;
+      width: 100px;
+      height: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .thumbnail.active {
+      opacity: 1;
+      border-color: #000;
+    }
+
+    .arrow-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 3;
+    }
 
 
 
@@ -920,13 +1261,7 @@ div#left-carousel {
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
-.nav-links li:hover .drop-menu,
-.nav-links li:hover .mega-box{
-  transition: all 0.3s ease;
-  top: 45px;
-  opacity: 1;
-  visibility: visible;
-}
+
 .drop-menu li a{
   width: 100%;
   display: block;
@@ -935,27 +1270,7 @@ div#left-carousel {
   font-weight: 400;
   border-radius: 0px;
 }
-.mega-box{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 30px;
-  top: 85px;
-  opacity: 0;
-  visibility: hidden;
-}
-.mega-box .content{
-  background: #ffffff;
-  padding: 25px 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-.mega-box .content .row{
-  width: calc(25% - 30px);
-  line-height: 45px;
-}
+
 .content .row img{
   width: 100%;
   height: 100%;
@@ -1023,6 +1338,7 @@ div#left-carousel {
     box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
     transition: all 0.3s ease;
   }
+
   /* custom scroll bar */
   ::-webkit-scrollbar {
     width: 10px;
@@ -1136,9 +1452,9 @@ nav input{
     /*padding: 60px 0;*/
     overflow-x: hidden;
 }
-.owl-wrapper {
+/*.owl-wrapper {
     left: 21px !important;
-}
+}*/
 .block-heading.block-heading--style-6 .block-heading__title:before {
     content: '';
     border-top: 3px solid #666;
@@ -2222,9 +2538,14 @@ h4.fw-bold {
     font-size: 20px;
     line-height: 31px;
 }
-.owl-controls, 
+/*.owl-controls, 
 .owl-pagination {
   display: none !important;
+}*/
+.carousel-testimonia.owl-carousel.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+    zoom: 1;
+    display: none;
 }
 .super-rounded {
     border-radius: 2rem;
