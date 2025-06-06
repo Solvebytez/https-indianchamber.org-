@@ -10,7 +10,9 @@ body {
     overflow-x: hidden; 
   }
 /* Default: White icon for desktop */
-
+.upcombox.border h3 {
+    color: blue;
+}
 
 
 .offcanvas-start{
