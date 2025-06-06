@@ -10,13 +10,23 @@ body {
     overflow-x: hidden; 
   }
 /* Default: White icon for desktop */
-.upcombox.border h3 {
-    color:#00235a;
-  font-family: 'Poppins', sans-serif;
+.upcombox.border h3
+Specificity: (0,2,1)
+ {
+    color: #00235a;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
+    border: 1px solid;
+    width: 100%;
+    padding: 7px;
+    background: #fff;
+    margin-top: -45px;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
