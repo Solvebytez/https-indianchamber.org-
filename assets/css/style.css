@@ -34,11 +34,12 @@ h4.upbox {
     color: #fff;
   font-family: 'Poppins', sans-serif;
 }
-h4.upbox a{
-  color:#fff;
-  background:orange;
-  padding:8px;
-  margin-left:4rem;
+h4.upbox a {
+    color: #fff;
+    background: #b04200;
+    padding: 7px;
+    font-size: 15px;
+    margin-left: 7rem;
 }
 
 
