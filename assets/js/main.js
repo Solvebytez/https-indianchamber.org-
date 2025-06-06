@@ -247,61 +247,41 @@ $(document).ready(function () {
 });
 
 //thumblain-slide
-const slides = document.querySelectorAll('.thumbslide');
+ const slides = document.querySelectorAll('.thumbslide');
   const thumbnails = document.querySelectorAll('.thumbnail');
-  const slideText = document.getElementById('slide-text');
-  const thumbnailsContainer = document.getElementById('thumbnails');
-
-  const slideData = [
-    { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-      { title: 'Curvv.ev', link: 'https://ev.tatamotors.com/curvv/ev.html' },
-    { title: 'Tata Neu', link: 'https://www.tata.com/business/tata-digital/tata-neu' },
-    { title: 'Westside', link: 'https://www.westside.com/' },
-    // Add more data objects as per number of slides
-  ];
-
+  const textContainer = document.getElementById('slide-text');
   let currentIndex = 0;
 
   function showSlide(index) {
-    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
-    thumbnails.forEach((thumb, i) => thumb.classList.toggle('active', i === index));
-    slideText.innerHTML = `
-      <h1>${slideData[index].title}</h1>
-      <a href="${slideData[index].link}" target="_blank">Visit Brand</a>
-    `;
+    if (!slides[index]) return;
+
+    slides.forEach(slide => slide.classList.remove('active'));
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    thumbnails[index].classList.add('active');
+
+    const title = slides[index].dataset.title;
+    const link = slides[index].dataset.link;
+
+    textContainer.innerHTML = `<h1>${title}</h1><a href="${link}" target="_blank">Visit Brand</a>`;
+
     currentIndex = index;
   }
 
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      const index = parseInt(thumb.dataset.index);
-      showSlide(index);
-    });
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => showSlide(index));
   });
 
-  function scrollThumbnails(direction) {
-    const scrollAmount = 200; // You can change scroll speed
-    thumbnailsContainer.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
-  }
-
+  // Optional: Auto-scroll
   setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }, 4000);
+    let nextIndex = (currentIndex + 1) % slides.length;
+    showSlide(nextIndex);
+  }, 4000); // 4 seconds
+
+  // Scroll thumbnails on arrow click
+  function scrollThumbnails(direction) {
+    const container = document.getElementById('thumbnails');
+    const scrollAmount = 200;
+    container.scrollLeft += direction * scrollAmount;
+  }
