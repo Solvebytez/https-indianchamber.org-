@@ -708,7 +708,7 @@ img {
     text-align: right;
 }
 img.img-fluid.br-rd {
-    height: 144px;
+    height: 99px;
 }
 @media (min-width: 768px) {
     .social-list {
@@ -2223,21 +2223,19 @@ h5.event-heading.fs-6.mt-2 a {
   }
   
   
+
+
 .overlay-content {
     position: absolute;
-    top: 17px;
+    top: 33px;
     left: 0;
-    height: 97%;
     background: rgb(0 0 0 / 62%);
     color: white;
-    display: flex
-;
+    display: flex;
     align-items: center;
     height: 54px;
-    justify-content: center;
     text-align: center;
-    margin-top: 96px;
-    padding: -56px;
+    font-size: 14px;
     transition: 0.3s ease-in-out;
 }
 h3.network__title {
