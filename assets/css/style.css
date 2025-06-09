@@ -10,6 +10,10 @@ body {
     overflow-x: hidden; 
   }
 /* Default: White icon for desktop */
+.upcombox.border.p-4.mt-5 {
+    /* margin-left: 20px; */
+    margin-right: -42px;
+}
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
