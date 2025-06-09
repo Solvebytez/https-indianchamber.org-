@@ -10,6 +10,14 @@ body {
     overflow-x: hidden; 
   }
 /* Default: White icon for desktop */
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); /* Optional: To make text read from bottom to top */
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
 .upcombox.border h3
 
  {
