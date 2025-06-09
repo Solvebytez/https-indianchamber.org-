@@ -954,6 +954,8 @@ div#left-carousel {
       transform: translateY(-50%);
       z-index: 2;
       max-width: 500px;
+     background: #00000085;
+    padding: 2rem;
     }
 
     .slide-text h1 {
