@@ -31,6 +31,22 @@ $(document).ready(function () {
         autoplay: true
     });
 });
+// Testimonials Slider
+$(document).ready(function () {
+    $("#Icc-Pupblication").owlCarousel({
+        items: 8,
+        responsive: {
+            1000: { items: 3 },
+            980: { items: 2 },
+            768: { items: 2 },
+            650: { items: 1 }
+        },
+        pagination: false,
+        navigation: false,
+        slideSpeed: 1000,
+        autoplay: true
+    });
+});
 
 // Left & Right Sliders
 const swiper = new Swiper('.mySwiper', {
