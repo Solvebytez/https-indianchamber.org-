@@ -1038,8 +1038,8 @@ div#left-carousel {
 
 .slide-text {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+   top: 100px;
+    left: 80px;
     color: white;
     z-index: 2;
     background: #00000085;
