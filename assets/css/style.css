@@ -1035,11 +1035,12 @@ div#left-carousel {
 }
 
 .slide-text {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: white;
-  z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    background: #00000096;
+    padding: 2rem;
 }
 
 .slide-text h1 {
