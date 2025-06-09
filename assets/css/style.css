@@ -14,6 +14,26 @@ body {
     /* margin-left: 20px; */
     margin-right: -42px;
 }
+h4.coporate-title
+Specificity: (0,1,1)
+ {
+    width: 100%;
+    max-width: 23%
+264.953px
+;
+    color: #00235a;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    border: 1px solid;
+    text-align: center;
+    padding: 7px;
+    background: #fff;
+    margin-top: -49px;
+    border-radius: 4rem;
+}
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -1612,10 +1632,10 @@ h3.exclusive__title.typescale-3.text-white a {
 div#post-donkey-2 img {
     height: 140px;
 }
-#carouselExampleDark {
+/*#carouselExampleDark {
     overflow-x: hidden;
  
-}
+}*/
 
 /*==================================================
 0.4 Our-Calender
