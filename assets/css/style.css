@@ -1442,9 +1442,9 @@ nav input{
     padding-top: 5px;
     padding-left: 10px;
 }
-.block-heading {
+/*.block-heading {
     padding: 15px 23px 0px 5px;
-}
+}*/
 .block-heading.block-heading--style-6 .block-heading__title, .block-heading.block-heading--style-7 .block-heading__title, .block-heading.block-heading--style-8 .block-heading__title {
     display: -webkit-box;
     display: -ms-flexbox;
