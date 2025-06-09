@@ -2227,13 +2227,14 @@ h5.event-heading.fs-6.mt-2 a {
 
 .overlay-content {
     position: absolute;
-    top: 33px;
+    top: 1px;
     left: 0;
-    background: rgb(0 0 0 / 62%);
+    background: rgb(0 0 0 / 55%);
     color: white;
-    display: flex;
+    display: flex
+;
     align-items: center;
-    height: 54px;
+    height: 95px;
     text-align: center;
     font-size: 14px;
     transition: 0.3s ease-in-out;
