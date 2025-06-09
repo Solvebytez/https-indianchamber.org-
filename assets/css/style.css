@@ -14,6 +14,9 @@ body {
     /* margin-left: 20px; */
     margin-right: -42px;
 }
+footer.custom-footer {
+    background: #0876b9 !important;
+}
 h4.coporate-title {
     color: #00235a;
     font-family: 'Poppins', sans-serif;
