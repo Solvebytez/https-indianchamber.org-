@@ -1039,7 +1039,8 @@ div#left-carousel {
     bottom: 30px;
     left: 30px;
     color: white;
-    background: #00000096;
+    z-index: 2;
+    background: #00000085;
     padding: 2rem;
 }
 
