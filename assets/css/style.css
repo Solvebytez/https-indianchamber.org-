@@ -950,7 +950,7 @@ div#left-carousel {
     .slides-text {
       position: absolute;
       top: 50%;
-      left: 10%;
+      left: 7.4%;
       transform: translateY(-50%);
       z-index: 2;
       max-width: 500px;
@@ -1039,7 +1039,7 @@ div#left-carousel {
 .slide-text {
     position: absolute;
    top: 100px;
-    left: 80px;
+    left: 109px;
     color: white;
     z-index: 2;
     background: #00000085;
