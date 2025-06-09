@@ -11,11 +11,16 @@ body {
   }
 /* Default: White icon for desktop */
 .vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg); /* Optional: To make text read from bottom to top */
-  text-align: center;
-  white-space: nowrap;
-  font-size: 16px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    white-space: nowrap;
+    font-size: 16px;
+    margin-left: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00235a;
 }
 
 .upcombox.border h3
