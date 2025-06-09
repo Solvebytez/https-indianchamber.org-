@@ -46,9 +46,7 @@ h4.coporate-title {
     color: #00235a;
 }
 
-.upcombox.border h3
-
- {
+.upcombox.border h3 {
     color: #00235a;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -60,9 +58,9 @@ h4.coporate-title {
     padding: 7px;
     background: #fff;
     margin-top: -45px;
-    max-width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 43%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 h4.upbox {
     background: #00235a;
@@ -1397,7 +1395,7 @@ nav input{
 =========================================*/
 /* General Styling */
 .our-exclusive {
-    padding: 7px 98px 20px 35px;
+    padding: 7px 66px 20px 20px;
     overflow-x: hidden;
 }
 /*.owl-wrapper {
