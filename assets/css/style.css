@@ -14,12 +14,7 @@ body {
     /* margin-left: 20px; */
     margin-right: -42px;
 }
-h4.coporate-title
-Specificity: (0,1,1)
- {
-    width: 100%;
-    max-width: 23%
-264.953px;
+h4.coporate-title {
     color: #00235a;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -32,6 +27,8 @@ Specificity: (0,1,1)
     background: #fff;
     margin-top: -49px;
     border-radius: 4rem;
+    width: 100%;
+    max-width: 23%;
 }
 .vertical-text {
     writing-mode: vertical-rl;
