@@ -9,6 +9,16 @@
 body {
     overflow-x: hidden; 
   }
+  #indicator {
+      position: absolute;
+      bottom: 36px;
+      margin-left: -45% !important
+    }   
+
+    #indicator .active {
+      opacity: 1;
+      background-color: #fff;
+    }
 .fact-box {
     background-color: #043a5b;
     color: #fff;
