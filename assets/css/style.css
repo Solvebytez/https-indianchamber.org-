@@ -9,6 +9,67 @@
 body {
     overflow-x: hidden; 
   }
+  .fact-box {
+    background-color: #043a5b;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 8.6rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+    .fact-caption {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+    .fact-heading {
+      font-size: 22px;
+      margin: 0 0 15px 0;
+    }
+
+    .fact-content {
+      font-size: 16px;
+    }
+
+    .fact-text,
+    .fact-link {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .fact-text.fade,
+    .fact-link.fade {
+      opacity: 0;
+    }
+
+    .fact-link {
+      display: inline-block;
+      color: #fff;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .fact-link:hover {
+      color: #e0e0e0;
+    }
+
+    .fact-refresh {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+    .fact-refresh img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(100);
+    }
   #tataindicator {
       position: absolute;
       bottom: 0px;
