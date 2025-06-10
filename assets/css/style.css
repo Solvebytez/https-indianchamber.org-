@@ -17,7 +17,7 @@ body {
 
 
      #tataindicator [data-bs-target] {
-      background-color: #ffffff;
+      background-color: red;
       width: 10px;
       height: 10px;
       border-radius: 50%;
