@@ -17,7 +17,7 @@ body {
     max-width: 400px;
     position: relative;
     overflow: hidden;
-    margin-top: 6.5rem;
+    margin-top: 6.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease;
 }
@@ -62,7 +62,7 @@ body {
     .fact-refresh {
     cursor: pointer;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 4.3rem;
 }
 
     .fact-refresh img {
@@ -92,7 +92,7 @@ body {
       background-color: #fff;
     }
  .row.align-items-center.noMargin {
-      background: #fff;
+      background: #f1f1f1;
     }
 
     .row.align-items-center.noMargin:after {
