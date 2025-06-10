@@ -160,6 +160,10 @@ body {
   height: 100%;
   z-index: 3;
 }
+img#fade2-img {
+    height: 503px;
+    width: 100%;
+}
 
 
 
