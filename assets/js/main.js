@@ -302,7 +302,7 @@ $(document).ready(function () {
     container.scrollLeft += direction * scrollAmount;
   }
 //fade-tata
-const facts = [
+ const facts = [
       {
         text: "India’s first business history archive, Tata Central Archives, was set up in 1991.",
         link: "https://www.tata.com/newsroom/heritage/tata-central-archives-art",
