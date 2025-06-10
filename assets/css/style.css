@@ -1485,6 +1485,11 @@ nav input{
     height: 100%;
     height: 558px;
 }
+.carousel-caption {  
+    padding-top: 1.25rem;
+    padding-bottom: 12.25rem !important;
+   
+}
 
 /* Layout adjustments for large screens */
 .col-lg-6 {
