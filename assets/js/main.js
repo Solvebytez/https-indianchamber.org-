@@ -301,4 +301,52 @@ $(document).ready(function () {
     const scrollAmount = 200;
     container.scrollLeft += direction * scrollAmount;
   }
+//fade-tata
+const facts = [
+      {
+        text: "India’s first business history archive, Tata Central Archives, was set up in 1991.",
+        link: "https://www.tata.com/newsroom/heritage/tata-central-archives-art",
+        label: "The Art of Archiving",
+        bg: "#043a5b"
+      },
+      {
+        text: "Jamsetji Tata's Empress Mills, established in 1877, brought ring spindle technology to India.",
+        link: "https://www.tata.com/newsroom/through-the-mill",
+        label: "Through the Mill",
+        bg: "#1ba2f5"
+      },
+      {
+        text: "The Tata group has over 100 operating companies in seven business sectors.",
+        link: "https://www.tata.com/business",
+        label: "Explore Businesses",
+        bg: "#00796b"
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function refreshFact() {
+      const factBox = document.getElementById('factBox');
+      const factText = document.getElementById('factText');
+      const factLink = document.getElementById('factLink');
+
+      // Add fade-out
+      factText.classList.add('fade');
+      factLink.classList.add('fade');
+
+      // Wait for fade-out then update content
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % facts.length;
+        const current = facts[currentIndex];
+
+        factText.innerHTML = current.text;
+        factLink.innerHTML = current.label;
+        factLink.href = current.link;
+        factBox.style.backgroundColor = current.bg;
+
+        // Fade-in
+        factText.classList.remove('fade');
+        factLink.classList.remove('fade');
+      }, 500);
+    }
 
