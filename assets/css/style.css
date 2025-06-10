@@ -11,7 +11,7 @@ body {
   }
   #tataindicator {
       position: absolute;
-      bottom: 36px;
+      bottom: 0px;
       margin-left: -45% !important
     }
 
