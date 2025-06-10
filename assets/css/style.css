@@ -71,7 +71,7 @@ body {
       filter: brightness(100);
     }
 
-    .carousel-indicators {
+    #indicator {
       position: absolute;
       bottom: 36px;
       margin-left: -45% !important
