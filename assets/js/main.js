@@ -301,3 +301,15 @@ $(document).ready(function () {
     const scrollAmount = 200;
     container.scrollLeft += direction * scrollAmount;
   }
+ const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
