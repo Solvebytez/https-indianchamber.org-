@@ -14,18 +14,7 @@ $(document).ready(function () {
         autoplay: true
     });
 });
-   const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      speed: 1000,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+ 
 // Testimonials Slider
 $(document).ready(function () {
     $("#testimonials-slider").owlCarousel({
