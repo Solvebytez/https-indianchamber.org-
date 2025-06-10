@@ -46,7 +46,7 @@ body {
       width: 0;
       z-index: 1;
     }
-#tata-item{
+#tata-item img{
   border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     height: 320px;
