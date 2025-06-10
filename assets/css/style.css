@@ -11,8 +11,7 @@ body {
   }
   .fact-box {
     background-color: #0876b9;
-    color: #fff;
-    border-radius: 8px;
+    color: #fff;   
     padding: 20px;
     max-width: 400px;
     position: relative;
@@ -107,9 +106,7 @@ body {
       width: 0;
       z-index: 1;
     }
-#tata-item img{
-  border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+#tata-item img{ 
     height: 330px;
 }
 .row.align-items-center.noMargin {
