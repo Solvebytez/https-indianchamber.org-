@@ -1480,6 +1480,11 @@ nav input{
     height: 100%;
     height: 258px;
 }
+.carousel-tatainner .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    height: 258px;
+}
 
 /* Layout adjustments for large screens */
 .col-lg-6 {
