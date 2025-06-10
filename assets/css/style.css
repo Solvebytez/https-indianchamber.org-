@@ -37,11 +37,11 @@ body {
     .row.align-items-center.noMargin:after {
       border-bottom: 15px solid transparent;
       border-top: 15px solid transparent;
-      border-right: 15px solid red;
+      border-right: 15px solid #fff;
       content: "";
       height: 0;
       position: absolute;
-      right: 26.7rem;
+      right: 28.7rem;
       top: 55px;
       width: 0;
       z-index: 1;
@@ -49,7 +49,10 @@ body {
 #tata-item img{
   border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    height: 320px;
+    height: 330px;
+}
+.row.align-items-center.noMargin {
+    background: #fff;
 }
 
 
