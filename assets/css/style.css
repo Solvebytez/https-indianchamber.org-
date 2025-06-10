@@ -9,6 +9,27 @@
 body {
     overflow-x: hidden; 
   }
+  #tataindicator {
+      position: absolute;
+      bottom: 36px;
+      margin-left: -45% !important
+    }
+
+
+     #tataindicator [data-bs-target] {
+      background-color: #ffffff;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+
+    #tataindicator .active {
+      opacity: 1;
+      background-color: #fff;
+    }
 
 
 /* Default: White icon for desktop */
