@@ -143,8 +143,8 @@ body {
 .imageOverlayFb {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 5px;
+    width: 98%;
     height: 100%;
     background: rgb(50 91 153 / 76%);
     z-index: 1;
