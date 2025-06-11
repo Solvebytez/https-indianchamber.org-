@@ -475,6 +475,10 @@ li:hover > .sub-menus {
     .form-row{
         flex-direction: column;
     }
+  h4.coporate-title{
+        width: 100%;
+    max-width: 63%;
+  }
 }
 
 @media (max-width: 540px){
