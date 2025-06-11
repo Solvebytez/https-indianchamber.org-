@@ -248,8 +248,9 @@ h4.coporate-title {
     text-transform: uppercase;
     font-weight: 700;
     color: #00235a;
+    border: 1px solid;
+    padding: 5px;
 }
-
 .upcombox h3 {
     color: #00235a;
     font-family: 'Poppins', sans-serif;
