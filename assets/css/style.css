@@ -235,11 +235,14 @@ h4.coporate-title {
     text-align: center;
     padding: 7px;
     background: #fff;
-    margin-top: -49px;
-    border-radius: 4rem;
+    margin-top: -49px;    
     width: 100%;
     max-width: 23%;
     margin-left: 1.1rem;
+}
+h4#home-event {
+    max-width: 50%;
+    margin-top: 0.2rem;
 }
 .vertical-text {
     writing-mode: vertical-rl;
