@@ -115,7 +115,7 @@ body {
     top: -59px;
     left: 0;
     z-index: 2;
-  overflow-x: hidden;
+  overflow: hidden;
     color: white;
     padding: 20px;
     width: 100%;
