@@ -2477,6 +2477,9 @@ h5.footer-text{
 p.small {
     color: #fff;
 }
+.text-dark {
+    color: #ffffff !important;
+}
 .rounded {
     border-radius: .25rem !important;
     width: 216px !important;
