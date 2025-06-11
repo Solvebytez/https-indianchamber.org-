@@ -2472,7 +2472,10 @@ color{
     color: #fff;
 }
 h5.footer-text{
-    color: #00235a;
+    color: #fff;
+}
+p.small {
+    color: #fff;
 }
 .rounded {
     border-radius: .25rem !important;
