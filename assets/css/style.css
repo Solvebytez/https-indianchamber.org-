@@ -1262,11 +1262,12 @@ div#left-carousel {
 }
 
 .thumbnail-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    background: black;
 }
 
 .thumbnails {
