@@ -210,7 +210,10 @@ div#our-overlay {
     padding: -56px;
     transition: 0.3s ease-in-out;
 }
-
+.Vignettes-Section.pt-5 {
+    width: 100%;
+    overflow: hidden;
+}
 
 
 /* Default: White icon for desktop */
