@@ -16,7 +16,7 @@ body {
     max-width: 400px;
     position: relative;
     overflow: hidden;
-    margin-top: 6.8rem;
+    margin-top: 5.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease;
 }
@@ -109,9 +109,7 @@ body {
 #tata-item img{ 
     height: 330px;
 }
-.row.align-items-center.noMargin {
-    background: #fff;
-}
+
 .whiteContent {
     position: absolute;
     top: -59px;
@@ -163,6 +161,9 @@ body {
 img#fade2-img {
     height: 503px;
     width: 100%;
+}
+.content2 {
+    padding-left: 1rem;
 }
 
 
