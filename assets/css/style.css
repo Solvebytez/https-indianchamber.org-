@@ -178,6 +178,21 @@ img.overlay-arrow {
     bottom: -25px;
     cursor: pointer;
 }
+#overlayLayer {
+    position: absolute;
+    top: 0;
+    width: 97%;
+    height: 100%;
+    background: rgb(50 91 153 / 76%);
+    z-index: 1;
+}
+.overlay-border.animation-highlight {
+    border-left: 1px solid #fff;
+    position: absolute;
+    bottom: 2rem;
+    top: 15rem;
+    left: 5%;
+}
 
 
 
