@@ -108,6 +108,7 @@ body {
     }
 #tata-item img{ 
     height: 330px;
+  widh:100%
 }
 
 .whiteContent {
@@ -498,6 +499,9 @@ li:hover > .sub-menus {
   }
   .fact-box{
     margin-top:1px;
+  }
+  #tataindicator{
+        bottom: 11rem;
   }
 }
 
