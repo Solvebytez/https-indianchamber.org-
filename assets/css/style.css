@@ -2446,10 +2446,11 @@ h5.event-heading.fs-6.mt-2 a {
     max-width: 85%;
 }
   
-  .overlay-card img {    
+.overlay-card img {
     height: auto;
     display: block;
-  }
+    border: 1px solid #dcdcdcd6;
+}
   
   
 
