@@ -106,18 +106,9 @@ body {
       width: 0;
       z-index: 1;
     }
- .row.align-items-center#media-nomargin:after {
-      border-bottom: 15px solid transparent;
-      border-top: 15px solid transparent;
-      border-right: 15px solid #fff;
-      content: "";
-      height: 0;
-      position: absolute;
-      right: 26rem;
-      top: 55px;
-      width: 0;
-      z-index: 1;
-    }
+ .row.align-items-center#media-nomargin:after {      
+      right: 19rem !important;
+         }
 #tata-item img{ 
     height: 330px;
   width: 100%;
