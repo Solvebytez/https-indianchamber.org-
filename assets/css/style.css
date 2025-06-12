@@ -1823,9 +1823,9 @@ h3.exclusive__title.typescale-3.text-white a {
      flex-direction: row !important;
   }
   
-    .carousel-item .col-md-6 {
+    /*.carousel-item .col-md-6 {
       width: 100%; /* Ensure both columns take full width */
-    }
+    }*/
   
     .carousel-caption {
       text-align: center; /* Center the caption text */
