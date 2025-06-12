@@ -493,6 +493,9 @@ li:hover > .sub-menus {
   h4.upbox a{
     margin-left:1px;
   }
+  .row.align-items-center.noMargin:after{
+    display:none;
+  }
 }
 
 @media (max-width: 540px){
