@@ -234,6 +234,19 @@ div#media-ceres {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+nav.media-ceris-pagination.text-left button.btn.btn-primary
+Specificity: (0,4,2)
+ {
+    background: #00235a;
+    border: none;
+}
+.ceris-reviews-section {
+    background: #f7f7f7;
+    padding: 25px 25px 9px;
+}
+#media-news {
+    background: #f7f7f7 !important;
+}
 
 
 
