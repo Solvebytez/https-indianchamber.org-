@@ -221,6 +221,10 @@ div#our-overlay {
 #carouselExampleDark img {
     height: 500px;
 }
+div#carouselExampleDark {
+    background: #f3f3f3;
+    padding-top: 6rem !important;
+}
 
 
 /* Default: White icon for desktop */
