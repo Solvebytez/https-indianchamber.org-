@@ -215,6 +215,9 @@ div#our-overlay {
     width: 100%;
     overflow: hidden;
 }
+#carouselExampleDark img {
+    height: 500px;
+}
 
 
 /* Default: White icon for desktop */
