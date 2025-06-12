@@ -2469,8 +2469,7 @@ h5.event-heading.fs-6.mt-2 a {
     align-items: center;
     height: 100%;
     width: 100%;
-    text-align: center;
-    width: 228px;
+    text-align: center;   
     font-size: 14px;
     transition: 0.3s ease-in-out;
 }
