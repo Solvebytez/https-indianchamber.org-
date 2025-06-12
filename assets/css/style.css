@@ -486,6 +486,10 @@ li:hover > .sub-menus {
     width:100%;
     max-width:80%;
   }
+  .upcombox h3{
+    width:100%;
+    max-width:65%;
+  }
 }
 
 @media (max-width: 540px){
