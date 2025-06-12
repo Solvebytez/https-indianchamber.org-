@@ -482,6 +482,10 @@ li:hover > .sub-menus {
         width: 100%;
     max-width: 63%;
   }
+  h4#home-event{
+    width:100%;
+    max-width:80%;
+  }
 }
 
 @media (max-width: 540px){
