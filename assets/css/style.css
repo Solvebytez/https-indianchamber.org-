@@ -522,7 +522,10 @@ li:hover > .sub-menus {
 }*/
 #network-slider {
     width: 100%;
-    margin-left: -22px;
+    margin-left: 2px;
+}
+#network-title {
+    margin-left: 1px;
 }
 
  .nav-item.active > {
@@ -2410,8 +2413,8 @@ a{
     text-decoration: none !important;
 }
 .network {
-    padding-top: 15px;
-    background-color:#00235a;
+    padding-top: 49px;
+   /* background-color: #00235a;*/
     padding-bottom: 34px;
 }
 .network-content {
