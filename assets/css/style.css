@@ -221,6 +221,12 @@ div#our-overlay {
 #carouselExampleDark img {
     height: 500px;
 }
+h4.event-title a {
+    color: #ffffff !important;
+    font-size: 14px;
+    background: #0876b9;
+    padding: 5px;
+}
 
 
 
