@@ -2990,7 +2990,10 @@ ul.list-unstyled.small{
 }
 ul.list-unstyled.small li a {
     font-size: 18px !important;
-    color: #707070 !important;
+    color: #fff !important;
+}
+  span.text-muted.small {
+    color: #ffffff !important;
 }
 h6.fw-bold.text-uppercase{
     display: none;
