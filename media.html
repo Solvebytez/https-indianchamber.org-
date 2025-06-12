@@ -470,7 +470,7 @@
   <div class="media-section">
     <div class="container">
       <div class="row">
-        <div class="ceris-main">
+        <div class="ceris-main d-flex">
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
             <div class="event-block border bg-aliceblue">
                   <h4 class="event-title">Current / Upcoming Events</h4>
@@ -514,46 +514,66 @@
 </div>
           </div>
          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
-            <div class="event-block border bg-aliceblue">
-                  <h4 class="event-title">Current / Upcoming Events</h4>
-
-                </div>
-            <div id="carousel-media-slide-Controls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <img src="assets/img/member/1700242861events_img.png" class="d-block w-100" alt="...">
-        <div class="post__text ">
-            <h3 class="post__title typescale-2 "><a href="#">
-                 Industry Connect cum Promotion of Millets ...                                                                                    </a>
-            </h3>
-        </div>
-    </div>
-    <div class="carousel-item active">
-      <img src="assets/img/member/1700242861events_img.png" class="d-block w-100" alt="...">
-        <div class="post__text ">
-         <h3 class="post__title typescale-2 "><a href="#">
-               Industry Connect cum Promotion of Millets ...                                                                                    </a>
-         </h3>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/member/1700242861events_img.png" class="d-block w-100" alt="...">
-        <div class="post__text ">
-          <h3 class="post__title typescale-2 "><a href="#">
-            Industry Connect cum Promotion of Millets ...                                                                                    </a>
-         </h3>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-media-slide-Controls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-media-slide-Controls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+       <div class=" py-5">
+                        <div class="the-heading-size-md mt-4 mb-4 ">
+                            <h4 class="coporate-title">Our News</h4>
+                        </div>
+                        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Slide 1 -->
+                                <div class="carousel-item" id="tata-item">
+                                    <div class="row align-items-center noMargin">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey">
+                                            <img src="https://www.tata.com/content/dam/tata/images/newsroom/press_releases/desktop/IISc-grant_card_hz_desktop_390x362.jpg" class="img-fluid" alt="News Image 1">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey carousel-caption-custom">
+                                            <div class="blueCaption text-primary pb-3">Press Release</div>
+                                            <h5>Air India’s Chairman Shares Vision &amp; New Year Message</h5>
+                                            <p>Air India will contribute Rs 500 crores to support its transformation
+                                                journey.</p>
+                                            <a href="#" class="btn btn-dark btn-sm mt-2">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="carousel-item active" id="tata-item">
+                                    <div class="row align-items-center noMargin">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey">
+                                            <img src="https://www.tata.com/content/dam/tata/images/newsroom/press_releases/desktop/chairman_newyear_message2025_card_hz_desktop_390x362.jpg" class="img-fluid" alt="News Image 2">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey carousel-caption-custom">
+                                            <div class="blueCaption text-primary pb-3">Press Release</div>
+                                            <h5>Indian Tech Sector to See Major Growth in 2025</h5>
+                                            <p>Experts forecast a 20% YoY increase in software exports and tech
+                                                innovation.</p>
+                                            <a href="#" class="btn btn-dark btn-sm mt-2">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="carousel-item" id="tata-item">
+                                    <div class="row align-items-center noMargin">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey">
+                                            <img src="https://www.tata.com/content/dam/tata/images/newsroom/press_releases/desktop/IISc-grant_card_hz_desktop_390x362.jpg" class="img-fluid" alt="News Image 3">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nHockey carousel-caption-custom">
+                                            <div class="blueCaption text-primary pb-3">Press Release</div>
+                                            <h5>Finance Ministry Announces New Digital Policies</h5>
+                                            <p>New policies aim to boost digital payment infrastructure across rural
+                                                areas.</p>
+                                            <a href="#" class="btn btn-dark btn-sm mt-2">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <div class="carousel-indicators" id="tataindicator">
+                                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                            </div>
+                        </div>
+                    </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-5">
             <div class="ceris-reviews-section">
