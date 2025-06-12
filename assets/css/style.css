@@ -91,7 +91,7 @@ body {
       background-color: #fff;
     }
  .row.align-items-center.noMargin {
-      background: #f1f1f1;
+      background: #fff;
     }
 
     .row.align-items-center.noMargin:after {
@@ -101,7 +101,7 @@ body {
       content: "";
       height: 0;
       position: absolute;
-      right: 30.3rem;
+      right: 26rem;
       top: 55px;
       width: 0;
       z-index: 1;
@@ -150,6 +150,9 @@ body {
     height: 100%;
     background: rgb(50 91 153 / 76%);
     z-index: 1;
+}
+.fade-setion {
+    background: #f1f1f1;
 }
 
 .hoverCard {
