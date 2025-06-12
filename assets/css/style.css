@@ -237,8 +237,8 @@ div#media-ceres {
 nav.media-ceris-pagination.text-left button.btn.btn-primary
 Specificity: (0,4,2)
  {
-    background: #00235a;
-    border: none;
+    background: #00235a !important;
+    border: none !important;
 }
 .ceris-reviews-section {
     background: #f7f7f7;
@@ -246,6 +246,13 @@ Specificity: (0,4,2)
 }
 #media-news {
     background: #f7f7f7 !important;
+}
+.reviews-title h3.heading-title {
+    font-size: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 0;
 }
 
 
