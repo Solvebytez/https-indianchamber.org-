@@ -2465,11 +2465,12 @@ h5.event-heading.fs-6.mt-2 a {
     left: 0;
     background: rgb(0 0 0 / 55%);
     color: white;
-    display: flex
-;
+    display: flex;
     align-items: center;
-    height: 95px;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    width: 228px;
     font-size: 14px;
     transition: 0.3s ease-in-out;
 }
