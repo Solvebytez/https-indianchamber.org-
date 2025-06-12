@@ -1819,6 +1819,9 @@ h3.exclusive__title.typescale-3.text-white a {
     .carousel-item .row {
       flex-direction: column; /* Stack content and image vertically on small screens */
     }
+  #tata-item .row{
+     flex-direction: row !important;
+  }
   
     .carousel-item .col-md-6 {
       width: 100%; /* Ensure both columns take full width */
