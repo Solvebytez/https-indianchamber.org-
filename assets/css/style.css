@@ -93,6 +93,13 @@ body {
  .row.align-items-center.noMargin {
       background: #fff;
     }
+.success-section {
+    background: #0876b9;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: 'Poppins';
+}
 
     .row.align-items-center.noMargin:after {
       border-bottom: 15px solid transparent;
