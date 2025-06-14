@@ -1768,6 +1768,7 @@ nav input{
 }
 .carousel-caption {   
   bottom: -12.75rem !important;
+  right: inherit!important;
     background: #00000066 !important;
     left: 7.2% !important;   
     margin-bottom: 29rem !important;
