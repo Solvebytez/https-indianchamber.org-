@@ -367,14 +367,14 @@ h5.custom-event-title.mt-2 a {
 }
 .sub-menu {
     position: absolute;
-  display: none;  
-  background: #fff;
-  list-style: none; 
-  width: 245px;
-    line-height: 45px; 
-     overflow-y: auto;
-  height: 300px; /* define height */
-    
+    display: none;
+    background: #fff;
+    list-style: none;
+    width: 245px;
+    line-height: 45px;
+    overflow-y: auto;
+    height: 300px;
+    padding: 0.5rem 0px;
 }
 
  
@@ -399,11 +399,14 @@ li:hover > .sub-menus {
 .sub-menu li a{
     width: 100%;
     display: block;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 16px;
     color: #000;
     font-weight: 400;
     border-radius: 0px;
  }
+a.atb-sector:hover {
+    background: #ebebeb;
+}
 
 .more:hover .more-sub-menu {
   display: block;
