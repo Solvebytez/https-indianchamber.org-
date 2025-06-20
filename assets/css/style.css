@@ -27,14 +27,7 @@ body {
       overflow: hidden;
 }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
-      padding: 0 20px;
-    }
+   
 
     .grid-item {
       background-color: #ffffff;
@@ -63,18 +56,9 @@ div#tenItemSlider button.carousel-control-next {
     margin-right: -40rem !important;
 }
 
+  
 
-    @media (max-width: 992px) {
-      .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+  
 
 /*--icon-demo*/
 
