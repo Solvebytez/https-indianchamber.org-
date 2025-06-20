@@ -20,6 +20,46 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease;
 }
+/* Slick Arrow Buttons */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+/* Arrow icons using pseudo-elements */
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 1;
+  color: #000;
+}
+
+.slick-prev::before {
+  content: '←'; /* Left Arrow */
+}
+
+.slick-next::before {
+  content: '→'; /* Right Arrow */
+}
+
   .grid-item {
     background-color: #fff;
     border-radius: 10px;
