@@ -56,8 +56,12 @@ body {
       display: block;
     }
 div#tenItemSlider button.carousel-control-prev {
-    margin-left: 3px !important;
+    margin-left: -40px !important;
 }
+div#tenItemSlider button.carousel-control-next {
+    margin-right: -40px !important;
+}
+
 
     @media (max-width: 992px) {
       .grid-container {
