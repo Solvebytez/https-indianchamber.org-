@@ -72,12 +72,18 @@ body {
   }
 
 
-  .grid-item {   
-    border-radius: 10px;
+  .grid-item {      
     text-align: center;
     padding: 15px;
     margin: 10px; /* 🟢 This adds space between boxes */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    clip-path: polygon(
+    10px 0%, calc(100% - 10px) 0%, 100% 10px,
+    100% calc(100% - 10px), calc(100% - 10px) 100%,
+    10px 100%, 0% calc(100% - 10px), 0% 10px
+  );
+  border: 1px solid white;
+  margin: 10px;
   }
 
   .grid-img1 {
@@ -108,10 +114,9 @@ body {
     display: block;
     font-size: 14px;
     font-weight: 500;
-    color: #333;
+    color: #fff;
   }
-.main-2slide {
-    background: linear-gradient(45deg, #923cb5, #000000, #009fff);
+.main-2slide {  
     padding-top: 30px;
     padding-bottom: 30px;
       overflow: hidden;
@@ -119,8 +124,7 @@ body {
 
    
 
-    .grid-item {    
-      border-radius: 10px;
+    .grid-item {          
       padding: 20px 10px;
       text-align: center;
       color: #000;
