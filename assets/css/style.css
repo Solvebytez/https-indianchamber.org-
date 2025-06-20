@@ -2495,8 +2495,8 @@ a.text-decoration-none.Latest__cat.Latest__cat-has-line{
     transition: 200ms ;
 }
  .grid-item img {
-      max-width: 50px;
-      height: 50px;
+      max-width: 50px !important;
+      height: 50px !important;
       object-fit: contain;
       margin-bottom: 10px;
     }
