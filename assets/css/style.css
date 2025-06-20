@@ -20,6 +20,14 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease;
 }
+.main-2slide {
+    background: linear-gradient(45deg, #923cb5, #000000, #009fff);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.carousel-item .atb-slide2 {
+    gap: 15px;
+}
  .carousel-item > div {
       display: flex;
       justify-content: center;
