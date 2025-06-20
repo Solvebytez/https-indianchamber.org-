@@ -55,6 +55,9 @@ body {
       font-size: 14px;
       display: block;
     }
+div#tenItemSlider button.carousel-control-prev {
+    margin-left: 3px !important;
+}
 
     @media (max-width: 992px) {
       .grid-container {
