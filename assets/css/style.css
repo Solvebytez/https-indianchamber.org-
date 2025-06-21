@@ -361,6 +361,7 @@ div#our-overlay {
 .Vignettes-Section.pt-5 {
     width: 100%;
     overflow: hidden;
+      background: #460846;
 }
 #carouselExampleDark img {
     height: 500px;
@@ -434,7 +435,7 @@ h4#home-event {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #00235a;
+    color: #fff;
     border: 1px solid;
     padding: 5px;
 }
