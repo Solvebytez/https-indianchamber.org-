@@ -36,6 +36,9 @@ body {
     font-size: 0;
     cursor: pointer;
   }
+div#Icc-Pupblication {
+    margin-top: 2rem;
+}
 
   .slick-prev {
     left: -50px;
