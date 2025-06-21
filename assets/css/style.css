@@ -54,11 +54,11 @@ body {
     border: solid black;
     border-width: 0 3px 3px 0;
     padding: 5px;
-    transform: rotate(-135deg);
+    transform: rotate(-223deg);
   }
 
   .slick-next::before {
-    transform: rotate(45deg);
+    transform: rotate(-49deg);
   }
 
   @media (max-width: 767px) {
