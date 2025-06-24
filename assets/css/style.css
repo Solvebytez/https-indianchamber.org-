@@ -1941,7 +1941,7 @@ nav input{
 
 .post img {
     width: 100%; /* Make images responsive */
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 /* Text styling */
