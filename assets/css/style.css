@@ -2073,8 +2073,8 @@ h3.exclusive__title.typescale-3.text-white a {
 }
 
   #post-donkey-2 {
-    /*border: 15px solid transparent;*/
-    border-image-source: url(../img/frame__3.png);
+    /* border: 15px solid transparent;
+    border-image-source: url(../img/frame__3.png); */
     /* border-image-source: url(/Icc/assets/img/frame__3.png); */
     border-image-slice: 34;
     /* border-image-repeat: round; */
