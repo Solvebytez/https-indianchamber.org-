@@ -14,7 +14,7 @@ $(document).ready(function () {
         autoplay: true
     });
 });
-$('#your-carousel-id').owlCarousel({
+$('#customCarousel').owlCarousel({
   loop: true,
   margin: 20,  // 👈 Image ke beech ka gap yahan set karein
   nav: true,
